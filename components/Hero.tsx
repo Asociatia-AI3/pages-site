@@ -10,14 +10,18 @@ export function Hero(props: JSX.HTMLAttributes<HTMLElement>) {
           class="max-w-xl rounded-lg shadow-2xl mask mask-hexagon-2 rotate-30"
         />
         <div class="max-w-[60rem]">
-          <p class="uppercase font-bold">Alba Iulia tech + startups</p>
-          <h1 class="text-6xl font-extrabold">Tech-Driven <mark class="bg-accent text-base-200">Community</mark> Growth.</h1>
+          <h1 class="text-6xl font-extrabold">
+            <mark class="bg-blue-300 text-base-500">
+              Fuziune
+            </mark>{" "}
+            creativ-tehnologică{"  "}pentru dezvoltare durabilă.
+          </h1>
           <p class="py-6">
-            Welcome to A13, where the journey has just begun. Join us in laying
-            the foundation for innovation, fostering collaboration, and igniting
-            growth together.
+            Vino în clusterul companiilor din industria IT&amp;C din județul
+            tău!<br />Fii parte din peisajul inovativ din Alba!
           </p>
-          <button class="btn btn-primary">Get Started</button>
+
+          <button class="btn btn-primary bg-orange-300">Devino membru</button>
         </div>
       </div>
     </section>
