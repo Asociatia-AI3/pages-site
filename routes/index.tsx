@@ -1,4 +1,5 @@
 import { About } from "../components/About.tsx";
+import { Events } from "../components/Events.tsx";
 import { Footer } from "../components/Footer.tsx";
 import { Header } from "../components/Header.tsx";
 import { Hero } from "../components/Hero.tsx";
@@ -15,6 +16,7 @@ export default function Home() {
           {/* <Members class="mt-36" /> */}
           {/* <Stat class="mt-36" /> */}
           <About class="mt-36" />
+          <Events />
         </div>
       </main>
       <Footer />
