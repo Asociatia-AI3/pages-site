@@ -10,6 +10,8 @@ export default {
         "work": ["Work Sans"],
         "lato": ["Lato"],
         "garamond": ["Garamond"],
+        "roboto": ["Roboto"],
+        "poppins": ["Poppins"]
       },
     },
   }
