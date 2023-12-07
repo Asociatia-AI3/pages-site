@@ -54,7 +54,7 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
             <div class="flex flex-col w-16 lg:w-72 w-full">
             </div>
             <div>
-              <img src="/photos/antiatelier.png" alt="anti-ateliere"/>
+              <img src="/photos/microfon.png" alt="anti-ateliere"/>
             </div>
           </figure>
         </div>
