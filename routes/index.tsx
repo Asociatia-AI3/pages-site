@@ -15,7 +15,7 @@ export default function Home() {
           <Hero class="bg-transparent" />
           {/* <Members class="mt-36" /> */}
           {/* <Stat class="mt-36" /> */}
-          <About class="mt-36" />
+          <About class="mt-10 lg:mt-36" />
           <Events />
         </div>
       </main>

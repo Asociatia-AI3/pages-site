@@ -9,7 +9,7 @@ export function Hero(props: JSX.HTMLAttributes<HTMLElement>) {
           src="/photos/citadel.jpg"
           class="w-screen lg:max-w-xl rounded-lg shadow-2xl mask mask-hexagon-2 rotate-30 mb-4"
         />
-        <div class="max-w-[60rem]">
+        <div class="flex flex-col lg:block max-w-[60rem]">
           <h1 class="text-6xl font-extrabold">
             <mark class="bg-blue-300 text-base-500">
               Fuziune
@@ -20,7 +20,9 @@ export function Hero(props: JSX.HTMLAttributes<HTMLElement>) {
             Vino în clusterul companiilor din industria IT&amp;C din județul
             tău!<br />Fii parte din peisajul inovativ din Alba!
           </p>
-          <button class="btn btn-primary bg-orange-300 hover:bg-orange-400 transition">Devino membru</button>
+          <div class="flex justify-center items-center lg:block">
+            <button class="btn btn-primary bg-orange-300 hover:bg-orange-400 transition">Devino membru</button>
+          </div>
         </div>
       </div>
     </section>
