@@ -4,16 +4,16 @@ export function Hero(props: JSX.HTMLAttributes<HTMLElement>) {
   return (
     <section
       {...props}
-      class={`${props.class} hero flex lg:max-w-screen-xl md:max-w-2xl`}
+      class={`${props.class} hero flex w-screen lg:max-w-screen-xl md:max-w-2xl`}
     >
-      <div class="hero-content flex-col lg:flex-row-reverse max-w-[100rem]">
+      <div class="hero-content flex-col lg:flex-row-reverse w-screen lg:max-w-[100rem]">
         <img
           alt="a13"
           src="/photos/citadel.jpg"
           class="w-screen lg:max-w-xl rounded-lg shadow-2xl mask mask-hexagon-2 rotate-30 mb-4"
         />
-        <div class="flex flex-col lg:block max-w-[60rem]">
-          <h1 class="text-6xl font-extrabold">
+        <div class="text-base flex flex-col lg:block w-screen lg:max-w-[60rem] px-4 md:px-0 lg:px-0">
+          <h1 class="text-3xl lg:text-6xl font-extrabold">
             <mark class="bg-blue-300 text-base-500">
               Fuziune
             </mark>{" "}
