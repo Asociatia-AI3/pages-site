@@ -24,9 +24,9 @@ export function Hero(props: JSX.HTMLAttributes<HTMLElement>) {
             tău!<br />Fii parte din peisajul inovativ din Alba!
           </p>
           <div class="flex justify-center items-center lg:block">
-            <button class="btn btn-primary bg-orange-300 hover:bg-orange-400 transition">
+            <a href="mailto:salut+site@ai3.ro?subject=Înscriere în AI3" class="btn btn-primary bg-orange-300 hover:bg-orange-400 transition">
               Devino membru
-            </button>
+            </a>
           </div>
         </div>
       </div>
