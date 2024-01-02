@@ -10,16 +10,17 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
         class={`${props.class} bg-white px-4 lg:px-0 p-8 w-full flex justify-center md:max-w-2xl lg:max-w-7xl md:px-0`}
       >
         <div class="mx-auto max-w-7xl lg:px-8">
+          <h1 class="text-4xl font-bold pb-4">Acțiunile noastre</h1>
           <div class="pb-4">
             <figure>
               <blockquote class=" leading-6 text-gray-900  sm:text-lg sm:leading-6 w-full lg:w-2/3">
-                <Title>Anti-Ateliere</Title>
+                <Title>Ateliere și Anti-Ateliere</Title>
                 <Paragraph>
                   <>
-                    AI3 organizează întâlniri periodice unde se discută diferite
-                    strategii de îmbunătățire/planificare a proiectelor și
-                    evenimentelor conturând rolul județului Alba în ecosistemul
-                    tehnologic al regiunii.
+                    Ne întâlnim în fiecare Joi de la ora 18:00. La <strong>Ateliere</strong> facem schimb de know-how tehnic,
+                    la centrul <a href="https://maps.app.goo.gl/EHSHyNzvwVYskex77" target="_blank" title="Centru Conventum" class="cursor-alias">Conventum</a>, 
+                    în săptămânile impare. La <strong>Anti-Ateliere</strong>, în săptămânile pare, socializăm informal la 
+                    <a href="https://maps.app.goo.gl/aZ3hJtaeMQJTbYobA" target="_blank" title="Framm's" class="cursor-alias">framm's</a>.
                   </>
                 </Paragraph>
               </blockquote>
@@ -32,8 +33,8 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
                 <Title>Festival Digital</Title>
                 <Paragraph>
                   <>
-                    AI3 te invită să explorezi primul Festival Digital din
-                    județul Alba unde trecutul longeviv întâlnește manifestarea
+                   Te invităm să explorezi primul Festival Digital din
+                    județul Alba, unde trecutul longeviv întâlnește manifestarea
                     artistică digitală în cel mai important oraș istoric din
                     România: Alba Iulia, Cealaltă Capitală.
                   </>
@@ -49,27 +50,16 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
                   <Title>Coder Dojo</Title>
                   <Paragraph>
                     <>
-                      CoderDojo este un club de informatică bazat pe
-                      voluntariat, care se adresează copiilor cu vârste intre 7
-                      si 17 ani.
+                      CoderDojo este un club de programare pentru copii și adolescenți în care 
+                      copiii (“ninjas” - între 7 și 17 ani) învață programare de la voluntari (“mentors”) 
+                      din comunitatea locală.
                     </>
                   </Paragraph>
                   <Paragraph>
                     <>
-                      Dojo-urile sunt un spațiu pentru copii și adolescenți
-                      pentru a explora tehnologia într-un mediu informal,
-                      creativ, sigur și social. La CoderDojo vrem să ajutăm
-                      copiii și adolescenții să realizeze că își pot construi un
-                      viitor pozitiv prin programare.
-                    </>
-                  </Paragraph>
-                  <Paragraph>
-                    <>
-                      Mișcarea CoderDojo consideră că înțelegerea limbajelor de
-                      programare este din ce în ce mai importantă în lumea
-                      modernă, că este mai bine și mai ușor să înveți aceste
-                      abilități devreme și că nimănui nu ar trebui să i se
-                      refuze oportunitatea de a face acest lucru.
+                      Dojo-ul are loc în fiecare joi de la ora 16:00 &nbsp;
+                      <a href="https://maps.app.goo.gl/rguUaLxb9ctmKuMg6" target="_blank" title="CoderDojo" class="cursor-alias">pe strada Gladiolelor numărul 3A</a>, 
+                      dar asigură-te că urmărești grupul de facebook pentru modificări de program.
                     </>
                   </Paragraph>
                   <div class="flex gap-x-1 ">
@@ -77,10 +67,10 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
                       <>
                         Mai multe detalii pe{"  "}
                         <a
-                          href="https://www.facebook.com/coderdojoalbaiulia/"
+                          href="https://coderdojo.ai3.ro/despre/"
                           class="text-base leading-6 tracking-tight lg:text-lg text-blue-500 hover:text-blue-600 transition"
                         >
-                          facebook
+                          pagina oficială a Dojo-ului
                         </a>
                       </>
                     </Paragraph>
@@ -88,7 +78,7 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
                 </blockquote>
               </div>
               <div class="w-2/4">
-                <img src="/photos/coderdojo.jpeg" alt="anti-ateliere" />
+                <img src="/photos/coderdojo.jpeg" alt="CoderDojo Alba Iulia" />
               </div>
             </figure>
           </div>
