@@ -18,9 +18,11 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
                 <Paragraph>
                   <>
                     Ne întâlnim în fiecare Joi de la ora 18:00. La <strong>Ateliere</strong> facem schimb de know-how tehnic,
-                    la centrul <a href="https://maps.app.goo.gl/EHSHyNzvwVYskex77" target="_blank" title="Centru Conventum" class="cursor-alias">Conventum</a>, 
-                    în săptămânile impare. La <strong>Anti-Ateliere</strong>, în săptămânile pare, socializăm informal la 
-                    <a href="https://maps.app.goo.gl/aZ3hJtaeMQJTbYobA" target="_blank" title="Framm's" class="cursor-alias">framm's</a>.
+                    la centrul <a href="https://maps.app.goo.gl/EHSHyNzvwVYskex77" target="_blank" title="Centru Conventum"
+                          class="text-base leading-6 tracking-tight lg:text-lg text-blue-500 hover:text-blue-600 transition">Conventum</a>, 
+                    în săptămânile impare. La <strong>Anti-Ateliere</strong>, în săptămânile pare, socializăm informal la &nbsp;
+                    <a href="https://maps.app.goo.gl/aZ3hJtaeMQJTbYobA" target="_blank" title="Framm's"
+                          class="text-base leading-6 tracking-tight lg:text-lg text-blue-500 hover:text-blue-600 transition">framm's</a>.
                   </>
                 </Paragraph>
               </blockquote>
@@ -58,7 +60,8 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
                   <Paragraph>
                     <>
                       Dojo-ul are loc în fiecare joi de la ora 16:00 &nbsp;
-                      <a href="https://maps.app.goo.gl/rguUaLxb9ctmKuMg6" target="_blank" title="CoderDojo" class="cursor-alias">pe strada Gladiolelor numărul 3A</a>, 
+                      <a href="https://maps.app.goo.gl/rguUaLxb9ctmKuMg6" target="_blank" title="CoderDojo"
+                          class="text-base leading-6 tracking-tight lg:text-lg text-blue-500 hover:text-blue-600 transition">pe strada Gladiolelor numărul 3A</a>, 
                       dar asigură-te că urmărești grupul de facebook pentru modificări de program.
                     </>
                   </Paragraph>
@@ -67,7 +70,7 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
                       <>
                         Mai multe detalii pe{"  "}
                         <a
-                          href="https://coderdojo.ai3.ro/despre/"
+                          href="https://coderdojo.ai3.ro/despre/" target="_blank"
                           class="text-base leading-6 tracking-tight lg:text-lg text-blue-500 hover:text-blue-600 transition"
                         >
                           pagina oficială a Dojo-ului
