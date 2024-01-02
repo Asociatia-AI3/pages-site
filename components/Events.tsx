@@ -70,7 +70,7 @@ export function Events(props: JSX.HTMLAttributes<HTMLElement>) {
                       <>
                         Mai multe detalii pe{"  "}
                         <a
-                          href="https://coderdojo.ai3.ro/despre/" target="_blank"
+                          href="https://coderdojo.ai3.ro/despre" target="_blank"
                           class="text-base leading-6 tracking-tight lg:text-lg text-blue-500 hover:text-blue-600 transition"
                         >
                           pagina oficială a Dojo-ului
