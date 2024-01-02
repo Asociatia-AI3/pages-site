@@ -18,8 +18,8 @@ export function About(props: JSX.HTMLAttributes<HTMLElement>) {
                   <Paragraph>
                     <>
                       AI3 este o comunitate de pasionați de tehnologie, antreprenori și inovatori pasionați de construirea unui ecosistem tehnologic 
-                      înfloritor în Alba. Împărtășim cu toții aceeași viziune: să facem din Alba un loc mai bun pentru a trăi și a lucra. AI3 este 
-                       <strong>primul cluster de IT&C din Alba</strong>, asociație profesională fără scop lucrativ, neguvernamentală, apolitică.
+                      înfloritor în Alba. Împărtășim cu toții aceeași viziune: să facem din Alba un loc mai bun pentru a trăi și a lucra.
+                      AI3 este <strong>primul cluster de IT&C din Alba</strong>, asociație profesională fără scop lucrativ, neguvernamentală, apolitică.
                     </>
                   </Paragraph>
                 </blockquote>
