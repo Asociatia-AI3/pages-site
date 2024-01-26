@@ -89,3 +89,21 @@ export const partners = [
     height: "max-h-14",
   },
 ];
+
+export const projects = [
+  {
+    name: "iFlow",
+    image: "/projects/ifloww.png",
+    logo: "/projects/iflow.webp",
+  },
+  {
+    name: "iFlow",
+    image: "/projects/ifloww.png",
+    logo: "/projects/iflow.webp",
+  },
+  {
+    name: "iFlow",
+    image: "/projects/ifloww.png",
+    logo: "/projects/iflow.webp",
+  },
+];
