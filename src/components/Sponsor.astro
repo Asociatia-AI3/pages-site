@@ -1,0 +1,22 @@
+---
+import { partners } from "../data";
+---
+
+{
+  partners.map((partner) => (
+    <a
+      href={partner.link}
+      title={partner.sponsor}
+    >
+      <img
+        class={`w-full object-contain object-left grayscale hover:grayscale-0 transition ${
+          partner.height ? partner.height : "max-h-20"
+        }`}
+        src={partner.image}
+        alt="Tuple"
+        width="105"
+        height="48"
+      />
+    </a>
+  ))
+}

@@ -1,0 +1,31 @@
+---
+import Button from "./Button.astro";
+import Sponsor from "./Sponsor.astro";
+---
+
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
+      <div
+        class="mx-auto grid w-full max-w-xl grid-cols-3 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8"
+      >
+        <Sponsor />
+      </div>
+      <div class="mx-auto w-full max-w-xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+          Parteneri
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">
+          Suntem recunoscători pentru susținerea deosebită și colaborarea
+          ireproșabilă a partenerilor noștri.
+        </p>
+        <div class="mt-8 flex items-center gap-x-6">
+          <Button
+            text="Devino partener AI3"
+            href="mailto:salut+site@ai3.ro"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

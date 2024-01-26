@@ -37,3 +37,55 @@ export const activities = [
     href: "#",
   },
 ];
+
+export const partners = [
+  {
+    image: "/partners/ai3.png",
+    sponsor: "AI3",
+    link: "https://ai3.ro/",
+  },
+  {
+    image: "/partners/primaria.png",
+    sponsor: "Primaria Alba Iulia",
+    link: "https://www.apulum.ro/",
+  },
+  {
+    image: "/partners/academia-doamnelor.jpg",
+    sponsor: "Academia Doamnelor",
+    link: "https://ro-ro.facebook.com/academiadoamneloralba/",
+  },
+  {
+    image: "/partners/educlick.png",
+    sponsor: "Edu Click",
+    link: "https://www.educlick.ro/",
+  },
+  {
+    image: "/partners/cea-mai-tare-firma.svg",
+    sponsor: "WhiteCity Code",
+    link: "https://whitecitycode.com/",
+    height: "max-h-14",
+  },
+  {
+    image: "/partners/echipa-de-digitalizare.jpeg",
+    sponsor: "Echipa De Digitalizare",
+    link: "https://echipadedigitalizare.ro/",
+  },
+  {
+    image: "/partners/xplication.jpeg",
+    sponsor: "Xplication",
+    link: "https://xplication.com/",
+    height: "max-h-14",
+  },
+  {
+    image: "/partners/acidartstudio.png",
+    sponsor: "Acid Art Studio",
+    link: "https://www.acidartstudio.com/",
+    height: "max-h-14",
+  },
+  {
+    image: "/partners/cos.svg",
+    sponsor: "Creators of Human Spaces",
+    link: "https://cos.ro/",
+    height: "max-h-14",
+  },
+];
