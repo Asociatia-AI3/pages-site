@@ -9,6 +9,9 @@ export default {
         secondary: "rgb(37 99 235 / var(--tw-text-opacity))",
         primary: "rgb(245,245,220)",
       },
+      boxShadow: {
+        myShadow: "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+      },
     },
   },
   plugins: [require("daisyui")],
