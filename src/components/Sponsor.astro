@@ -4,17 +4,14 @@ import { partners } from "../data";
 
 {
   partners.map((partner) => (
-    <a
-      href={partner.link}
-      title={partner.sponsor}
-    >
+    <a href={partner.link} title={partner.sponsor}>
       <img
-        class={`w-full object-contain object-left grayscale hover:grayscale-0 transition ${
-          partner.height ? partner.height : "max-h-20"
+        class={`col-span-2 w-full object-contain object-left lg:col-span-1 ${
+          partner.height ? partner.height : "max-h-14"
         }`}
         src={partner.image}
-        alt="Tuple"
-        width="105"
+        alt={partner.sponsor}
+        width="158"
         height="48"
       />
     </a>
