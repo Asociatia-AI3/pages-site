@@ -5,36 +5,35 @@ import Button from "./Button.astro";
 
 <ul
   role="list"
-  class="mx-auto mt-8 md:mt-16 grid max-w-2xl grid-cols-1 gap-x-8 lg:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+  class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
   {
     projects.map((project) => (
-      <li>
+      <li class="group rounded-2xl bg-gray-800 relative overflow-hidden">
+        <img src={project.bg} class="absolute w-full h-full" />
+        <div class="group-hover:bg-slate-800/50 bg-slate-800/80 w-full h-full absolute transition-all duration-200 rounded-2xl" />
         <a href={project.link}>
-          <div class="group relative overflow-hidden border-2 border-white/50 rounded-xl md:h-96">
-            <div class="group-hover:bg-slate-800/50 bg-slate-800/40 w-full h-full absolute z-40 transition-all duration-200 rounded-2xl" />
-            <img
-              class="group-hover:scale-125 transition-all duration-500"
-              src={project.image}
-              alt=""
-            />
-            <img
-              src={project.logo}
-              class="w-32 max-h-auto left-[40%] top-[40%] absolute z-40"
-            />
-          </div>
-          <div class="relative -top-24 z-40 mt-8 flex items-center gap-x-4 px-8 border-2 rounded-full bg-gray-100 py-4  border-gray-200 shadow-myShadow">
-            <img src={project.logo2} alt="" class="h-16 w-16 bg-gray-50" />
-            <div class="text-sm leading-6">
-              <p class="font-semibold text-gray-900">
-                <a href="#">
-                  <span class="absolute inset-0" />
-                  {project.name}
-                </a>
-              </p>
-              <p class="text-gray-600">Membru AI3</p>
-            </div>
+          <div class="m-auto h-48 w-48 rounded-full md:h-56 md:w-56 z-40 relative flex justify-center items-center">
+            <img src={project.logo} alt="" class="w-32 h-32" />
           </div>
         </a>
+        <div class="relative px-8 py-4 flex items-center gap-x-4">
+          <img
+            src={project.developerLogo}
+            class={`${project.height ? project.height : "h-8"}`}
+          />
+          <div>
+            <a
+              href={project.link}
+              class="mt-6 text-base font-semibold leading-7 tracking-tight text-white hover:text-primary transition">
+              {project.name}
+            </a>
+            <a href={project.developerLink}>
+              <p class="text-sm leading-6 text-accentHover hover:underline transition">
+                {project.developer}
+              </p>
+            </a>
+          </div>
+        </div>
       </li>
     ))
   }
