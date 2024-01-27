@@ -7,7 +7,7 @@ export const navLinks = [
     route: "Festival",
     href: "#festival",
     classes:
-      "text-sm font-semibold drop-shadow text-accentHover dark:text-accentHover dark:hover:text-accentHover hover:text-blue-700 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
+      "text-sm font-semibold drop-shadow text-accentHover dark:text-accent dark:hover:text-blue-600 hover:text-blue-700 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
   },
 ];
 
@@ -94,7 +94,7 @@ export const projects = [
     logo: "/projects/digitalizare.png",
     bg: "/projects/digital.avif",
     link: "https://echipadedigitalizare.ro/",
-    developer: "Developer",
+    developer: "Echipa de Digitalizare",
     developerLogo: "/projects/digitalizare.png",
     developerLink: "https://echipadedigitalizare.ro/",
     height: "max-h-14",
