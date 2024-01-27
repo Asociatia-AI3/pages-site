@@ -7,7 +7,7 @@ export const navLinks = [
     route: "Festival",
     href: "#festival",
     classes:
-      "text-sm font-semibold drop-shadow text-accentHover hover:text-blue-700 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
+      "text-sm font-semibold drop-shadow text-accentHover dark:text-accentHover dark:hover:text-accentHover hover:text-blue-700 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
   },
 ];
 
