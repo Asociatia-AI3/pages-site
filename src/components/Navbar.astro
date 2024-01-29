@@ -7,11 +7,24 @@ import ThemeToggle from "./ThemeToggle";
 <header class="absolute inset-x-0 top-0 z-50">
   <nav
     class="hidden md:flex mx-auto max-w-7xl items-center justify-between p-6 lg:px-8"
-    aria-label="Global">
+    aria-label="Global"
+  >
     <div class="flex lg:flex-1">
-      <a href="/" class="-m-1.5 p-1.5">
+      <a
+        href="/"
+        class="-m-1.5 p-1.5"
+      >
         <span class="sr-only">AI3</span>
-        <img class="h-16 w-auto" src="/logo.png" alt="" />
+        <img
+          class="h-16 w-16 dark:hidden"
+          src="/logo.png"
+          alt=""
+        />
+        <img
+          class="h-16 w-16 hidden dark:block"
+          src="/ai3_white.svg"
+          alt=""
+        />
       </a>
     </div>
 
@@ -22,7 +35,8 @@ import ThemeToggle from "./ThemeToggle";
             href="#"
             class={`text-sm font-semibold leading-6 dark:text-zinc-200 hover:text-accent dark:hover:text-accent transition ${
               route.classes ? route.classes : "text-gray-700"
-            }`}>
+            }`}
+          >
             {route.route}
           </a>
         ))

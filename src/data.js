@@ -7,7 +7,7 @@ export const navLinks = [
     route: "Festival",
     href: "#festival",
     classes:
-      "text-sm font-semibold drop-shadow text-accentHover dark:text-accent dark:hover:text-blue-600 hover:text-blue-700 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
+      "text-sm font-semibold drop-shadow text-accentHover dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
   },
 ];
 
@@ -16,7 +16,7 @@ export const activities = [
     title: "CoderDojo",
     description:
       "CoderDojo Alba Iulia este parte a unei inițiative globale de a crea cluburi de programare pentru copii și adolescenți. Dojo-ul din Alba Iulia este o inițiativă a AI3, primul cluster de IT din județul Alba.",
-    image: "/coder_dojo.svg",
+    image: "/about-pic.jpeg",
     buttonDesc: "Website CoderDojo",
     href: "https://coderdojo.ai3.ro",
   },
