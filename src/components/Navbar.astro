@@ -20,7 +20,7 @@ import ThemeToggle from "./ThemeToggle";
         navLinks.map((route) => (
           <a
             href="#"
-            class={`text-sm font-semibold leading-6 dark:text-zinc-200 dark:hover:text-accent hover:text-gray-900 transition ${
+            class={`text-sm font-semibold leading-6 dark:text-zinc-200 hover:text-accent dark:hover:text-accent transition ${
               route.classes ? route.classes : "text-gray-700"
             }`}>
             {route.route}
@@ -28,11 +28,11 @@ import ThemeToggle from "./ThemeToggle";
         ))
       }
     </div>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-x-4">
       <a
         href="https://coderdojo.ai3.ro"
-        class="text-sm font-semibold leading-6 text-accentHover hover:text-blue-700 dark:text-zinc-200 dark:hover:text-zinc-300 transition"
-        >CoderDojo <span aria-hidden="true">&rarr;</span></a
+        class="text-sm font-semibold leading-6 text-gray-200 hover:text-gray-300 transition"
+        >CoderDojo</a
       >
       <ThemeToggle client:load />
     </div>
