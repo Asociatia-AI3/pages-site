@@ -10,7 +10,7 @@ export default function MobileNavbar() {
       role="dialog"
       aria-modal="true"
     >
-      <div className="fixed right-0 z-50 w-full overflow-y-auto bg-white dark:bg-zinc-800 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div className="fixed right-0 z-50 w-full overflow-y-auto bg-white dark:bg-zinc-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
           <a
             href="#"

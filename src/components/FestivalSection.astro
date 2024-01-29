@@ -1,0 +1,34 @@
+---
+import Sponsor from "./Sponsor.astro";
+---
+
+<div class="bg-gray-100 dark:bg-zinc-900">
+  <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div
+      class="mx-auto max-w-7xl text-center bg-blue-500 rounded-2xl border-2 border-blue-400/40 shadow p-12"
+    >
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Festivalul Digital
+      </h2>
+      <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-indigo-200 pb-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit
+        laboriosam incidunt eius eum.
+      </p>
+      <a
+        href="#"
+        class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        >Viziteaza Website-ul</a
+      >
+      <div class="pt-14 flex items-center gap-x-4">
+        <div class="h-px flex-auto bg-zinc-200"></div>
+        <h3 class="tracking-wide text-zinc-200">cu sprijinul</h3>
+        <div class="h-px flex-auto bg-zinc-200"></div>
+      </div>
+      <div
+        class="mx-auto mt-10 grid grid-cols-4 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-5"
+      >
+        <Sponsor />
+      </div>
+    </div>
+  </div>
+</div>
