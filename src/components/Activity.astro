@@ -8,7 +8,7 @@ import Button from "./Button.astro";
 >
   {
     activities.map((activity) => (
-      <div class="flex flex-col items-start justify-between shadow  border-2 border-gray-50 dark:border-zinc-700/40 rounded-2xl overflow-hidden">
+      <div class="flex flex-col items-start justify-between bg-gray-50/80 dark:bg-zinc-800/40 rounded-2xl overflow-hidden">
         <div class="relative w-full">
           <img
             src={activity.image}
@@ -26,7 +26,7 @@ import Button from "./Button.astro";
               {activity.description}
             </p>
           </div>
-          <div class="relative mt-8 flex items-center gap-x-4 pb-4">
+          <div class="relative mt-8 flex items-center gap-x-4 pb-4 border-t-2 py-8 border-gray-200 dark:border-zinc-800/80">
             <Button
               href={activity.href}
               text={activity.buttonDesc}

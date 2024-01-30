@@ -1,77 +1,57 @@
-<div class="px-6 py-10 sm:px-10 lg:col-span-2 xl:p-12">
-  <h3 class="text-lg font-medium text-gray-900">Trimite-ne un mesaj</h3>
+<div class="mx-auto max-w-lg lg:max-w-none">
   <form
     action="#"
     method="POST"
-    class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+    class="grid grid-cols-1 gap-y-6"
   >
-    <div>
-      <label
-        for="full-name"
-        class="block text-sm font-medium text-gray-900"
+    <div class="group relative z-0 transition-all focus-within:z-10">
+      <input
+        id=":S1:"
+        autocomplete="name"
+        placeholder=" "
+        class="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-blue-600 focus:outline-none focus:ring-blue-600/5 rounded-2xl"
+        type="text"
+        name="name"
+      /><label
+        for=":S1:"
+        class="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-blue-600 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-blue-600"
+        >Nume</label
       >
-        Nume
-      </label>
-      <div class="mt-1">
-        <input
-          type="text"
-          name="full-name"
-          id="full-name"
-          autocomplete="family-name"
-          class="block w-full bg-gray-100 rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow focus:border-blue-500 focus:ring-blue-500"
-        />
-      </div>
     </div>
-    <div>
-      <label
-        for="email"
-        class="block text-sm font-medium text-gray-900"
+    <div class="group relative z-0 transition-all focus-within:z-10">
+      <input
+        id=":S1:"
+        autocomplete="Email"
+        placeholder=" "
+        class="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-blue-600 focus:outline-none focus:ring-blue-600/5 rounded-2xl"
+        type="text"
+        name="Email"
+      /><label
+        for=":S1:"
+        class="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-blue-600 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-blue-600"
+        >Email</label
       >
-        Email
-      </label>
-      <div class="mt-1">
-        <input
-          id="email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          class="block bg-gray-100 w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow focus:border-blue-500 focus:ring-blue-500"
-        />
-      </div>
+    </div>
+    <div class="group relative z-0 transition-all focus-within:z-10">
+      <textarea
+        id=":S1:"
+        autocomplete="message"
+        placeholder=" "
+        class="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-blue-600 focus:outline-none focus:ring-blue-600/5 rounded-2xl"
+        name="message"
+      ></textarea><label
+        for=":S1:"
+        class="pointer-events-none absolute left-6 top-1/2 -mt-6 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-blue-600 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-blue-600"
+        >Mesajul tau...</label
+      >
     </div>
 
-    <div class="sm:col-span-2">
-      <div class="flex justify-between">
-        <label
-          for="message"
-          class="block text-sm font-medium text-gray-900"
-        >
-          Mesaj
-        </label>
-        <span
-          id="message-max"
-          class="text-sm text-gray-500"
-        >
-          Max. 500 de caracter
-        </span>
-      </div>
-      <div class="mt-1">
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          class="bg-gray-50 shadow block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 focus:border-blue-500 focus:ring-blue-500"
-          aria-describedby="message-max"
-        ></textarea>
-      </div>
-    </div>
-    <div class="sm:col-span-2 sm:flex sm:justify-end">
+    <div>
       <button
         type="submit"
-        class="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
+        class="inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        >Trimite mesajul</button
       >
-        Trimite
-      </button>
     </div>
   </form>
 </div>
