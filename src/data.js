@@ -1,7 +1,7 @@
 export const navLinks = [
-  { route: "Acasă", href: "#acasa" },
+  { route: "Acasă", href: "/" },
   { route: "Proiecte", href: "#proiecte" },
-  { route: "Blog", href: "#blog" },
+  { route: "Blog", href: "/blog" },
   { route: "Contact", href: "#contact" },
   {
     route: "Festival",

@@ -26,7 +26,7 @@ export default function ThemeToggle() {
     <button onClick={handleClick}>
       {theme === "light" ? (
         <svg
-          class="swap-on fill-current w-6 h-6 text-yellow-300"
+          className="swap-on fill-current w-6 h-6 text-yellow-300"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -34,7 +34,7 @@ export default function ThemeToggle() {
         </svg>
       ) : (
         <svg
-          class="swap-off fill-current w-6 h-6 text-white"
+          className="swap-off fill-current w-6 h-6 text-white"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >

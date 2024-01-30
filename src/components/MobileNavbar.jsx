@@ -13,17 +13,17 @@ export default function MobileNavbar() {
       <div className="fixed right-0 z-50 w-full overflow-y-auto bg-white dark:bg-zinc-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
           <a
-            href="#"
+            href="/"
             className="-m-1.5 p-1.5"
           >
             <span className="sr-only">AI3</span>
             <img
-              class="h-16 w-16 dark:hidden"
+              className="h-16 w-16 dark:hidden"
               src="/logo.png"
               alt=""
             />
             <img
-              class="h-16 w-16 hidden dark:block"
+              className="h-16 w-16 hidden dark:block"
               src="/ai3_white.svg"
               alt=""
             />
@@ -40,31 +40,31 @@ export default function MobileNavbar() {
                   className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M6 18L18 6M6 6l12 12"
                   ></path>
                 </svg>
               </>
             ) : (
               <>
-                <span class="sr-only">Deschide meniul</span>
+                <span className="sr-only">Deschide meniul</span>
                 <svg
-                  class="h-6 w-6"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                   />
                 </svg>
@@ -78,7 +78,8 @@ export default function MobileNavbar() {
               <div className="space-y-2 py-6">
                 {navLinks.map((route) => (
                   <a
-                    href="#"
+                    key={route.route}
+                    href={route.href}
                     className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 dark:text-zinc-200 dark:hover:text-accent hover:text-gray-9000 ${
                       route.classes ? route.classes : "text-gray-900"
                     }`}

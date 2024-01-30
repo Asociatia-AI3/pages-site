@@ -32,7 +32,7 @@ import ThemeToggle from "./ThemeToggle";
       {
         navLinks.map((route) => (
           <a
-            href="#"
+            href={route.href}
             class={`text-sm font-semibold leading-6 dark:text-zinc-200 hover:text-accent dark:hover:text-accent transition ${
               route.classes ? route.classes : "text-gray-700"
             }`}
