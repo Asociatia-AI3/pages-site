@@ -1,8 +1,8 @@
 export const navLinks = [
   { route: "Acasă", href: "/" },
-  { route: "Proiecte", href: "#proiecte" },
+  { route: "Proiecte", href: "/#proiecte" },
   { route: "Blog", href: "/blog" },
-  { route: "Contact", href: "#contact" },
+  { route: "Contact", href: "/#contact" },
   {
     route: "Festival",
     href: "#festival",
@@ -81,7 +81,7 @@ export const projects = [
     developerLink: "https://iflow.ro",
   },
   {
-    name: "Get Online",
+    name: "AltNet",
     logo: "/projects/iflow_logo.webp",
     bg: "/projects/get_online.avif",
     link: "https://getonline.ru",
