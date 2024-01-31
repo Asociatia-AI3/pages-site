@@ -93,7 +93,14 @@ export default function MobileNavbar() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-accentHover hover:text-blue-700 transition"
                 >
-                  CoderDojo
+                  <img
+                    src="diffusion_black.png"
+                    class="w-48 hidden dark:block"
+                  />
+                  <img
+                    src="diffusion_white.png"
+                    class="w-48 dark:hidden"
+                  />
                 </a>
                 <ThemeToggle />
               </div>

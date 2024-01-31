@@ -4,8 +4,8 @@ export const navLinks = [
   { route: "Blog", href: "/blog" },
   { route: "Contact", href: "/#contact" },
   {
-    route: "Festival",
-    href: "#festival",
+    route: "CoderDojo",
+    href: "https://coderdojo.ai3.ro",
     classes:
       "text-sm font-semibold drop-shadow text-accentHover dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
   },
