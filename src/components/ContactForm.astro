@@ -1,3 +1,10 @@
+---
+type Props = {
+  buttonText: string;
+};
+const { buttonText } = Astro.props;
+---
+
 <div class="mx-auto max-w-lg lg:max-w-none">
   <form
     action="#"
@@ -49,8 +56,8 @@
     <div>
       <button
         type="submit"
-        class="inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-        >Trimite mesajul</button
+        class="inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        >{buttonText}</button
       >
     </div>
   </form>
