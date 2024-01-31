@@ -1,7 +1,6 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
 import BlogLayout from "../../layouts/BlogLayout.astro";
-import Footer from "../../components/Footer.astro";
 
 type Props = {
   post: CollectionEntry<"posts">;
@@ -61,5 +60,4 @@ const { Content } = await post.render();
   >
     <Content />
   </div>
-  <Footer />
 </BlogLayout>

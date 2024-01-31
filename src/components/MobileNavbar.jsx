@@ -95,11 +95,11 @@ export default function MobileNavbar() {
                 >
                   <img
                     src="diffusion_black.png"
-                    class="w-48 hidden dark:block"
+                    className="w-48 hidden dark:block"
                   />
                   <img
                     src="diffusion_white.png"
-                    class="w-48 dark:hidden"
+                    className="w-48 dark:hidden"
                   />
                 </a>
                 <ThemeToggle />
