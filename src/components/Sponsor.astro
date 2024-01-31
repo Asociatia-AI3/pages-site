@@ -4,16 +4,26 @@ import { partners } from "../data";
 
 {
   partners.map((partner) => (
-    <a href={partner.link} title={partner.sponsor}>
-      <img
-        class={`col-span-2 w-full object-contain object-left lg:col-span-1 ${
-          partner.height ? partner.height : "max-h-14"
-        }`}
-        src={partner.image}
-        alt={partner.sponsor}
-        width="158"
-        height="48"
-      />
+    <a
+      href={partner.link}
+      title={partner.sponsor}
+    >
+      <div class="hover:bg-gray-50 dark:hover:bg-zinc-800/80 transition h-24 gap-x-8 flex justify-center items-center rounded-xl px-8 py-4">
+        <img
+          class={`dark:hidden col-span-2 object-contain object-left lg:col-span-1 ${
+            partner.height ? partner.height : "max-h-14"
+          }`}
+          src={partner.image}
+          alt={partner.sponsor}
+        />
+        <img
+          class={`hidden dark:block col-span-2 object-contain object-left lg:col-span-1 ${
+            partner.height ? partner.height : "max-h-14"
+          }`}
+          src={partner.imageDark}
+          alt={partner.sponsor}
+        />
+      </div>
     </a>
   ))
 }
