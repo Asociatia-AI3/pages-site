@@ -56,8 +56,13 @@ const { buttonText } = Astro.props;
     <div>
       <button
         type="submit"
-        class="inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-        >{buttonText}</button
+        class="inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        >{buttonText}
+        <span
+          aria-hidden="true"
+          class="pl-2"
+          >→</span
+        ></button
       >
     </div>
   </form>

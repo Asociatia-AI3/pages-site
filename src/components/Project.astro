@@ -24,7 +24,7 @@ import Button from "./Button.astro";
             />
           </div>
         </a>
-        <div class="relative px-4 md:px-8 py-4 flex items-center gap-x-4">
+        <div class="relative px-4 md:px-5 py-4 flex items-center gap-x-2">
           <img
             src={project.developerLogo}
             class={`${project.height ? project.height : "h-8"}`}
@@ -32,12 +32,12 @@ import Button from "./Button.astro";
           <div>
             <a
               href={project.link}
-              class="mt-6 text-base font-semibold leading-7 tracking-tight text-white hover:text-accent transition shadow-myShadow"
+              class="mt-6 text-base font-medium leading-7 tracking-tight text-white hover:underline transition shadow-myShadow"
             >
               {project.name}
             </a>
             <a href={project.developerLink}>
-              <p class="text-sm leading-6 text-accentHover hover:underline transition">
+              <p class="text-sm leading-6 text-accentHover hover:text-accentHover/80 transition">
                 {project.developer}
               </p>
             </a>
