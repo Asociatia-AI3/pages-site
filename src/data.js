@@ -6,7 +6,7 @@ export const navLinks = [
   {
     route: "CoderDojo",
     href: "https://coderdojo.ai3.ro",
-    classes: "text-blue-600 hover:text-blue-600/80",
+    class: "text-blue-600 hover:text-blue-600/80",
   },
 ];
 
