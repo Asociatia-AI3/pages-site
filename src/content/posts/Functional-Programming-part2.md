@@ -1,6 +1,6 @@
 ---
 title: "Functional Programming GUIs (part 2) - Arrowized FRP "
-pubDate: "2019-07-23"
+pubDate: "July 23, 2019"
 categories: ["Engineering", "Startup Technology"]
 tags:
   [

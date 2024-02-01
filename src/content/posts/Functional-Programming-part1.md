@@ -1,6 +1,6 @@
 ---
 title: "Functional Programming GUIs (part 1)"
-pubDate: "2019-05-03"
+pubDate: "May 3, 2019"
 categories: ["Engineering", "Startup Technology"]
 tags:
   [

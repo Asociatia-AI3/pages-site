@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
-      const storedTheme = localStorage.getItem("theme");
-      return storedTheme || "light";
+      return localStorage.getItem("theme");
     }
     return "light";
   });
