@@ -20,12 +20,12 @@ export default function MobileNavbar() {
             <img
               className="h-16 w-16 dark:hidden"
               src="/logo.png"
-              alt=""
+              alt="AI3 logo"
             />
             <img
               className="h-16 w-16 hidden dark:block"
               src="/ai3_white.svg"
-              alt=""
+              alt="AI3 logo"
             />
           </a>
           <button
@@ -96,10 +96,12 @@ export default function MobileNavbar() {
                   <img
                     src="diffusion_black.png"
                     className="w-48 hidden dark:block"
+                    alt="difffusion logo"
                   />
                   <img
                     src="diffusion_white.png"
                     className="w-48 dark:hidden"
+                    alt="difffusion logo"
                   />
                 </a>
                 <ThemeToggle />

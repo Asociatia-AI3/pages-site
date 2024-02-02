@@ -39,34 +39,34 @@ export const activities = [
 
 export const partners = [
   {
-    image: "/partners/primaria.png",
+    image: "./partners/primaria.png",
     imageDark: "/partners/primaria.png",
     sponsor: "Primaria Alba Iulia",
     link: "https://www.apulum.ro/",
     height: "max-h-28",
   },
   {
-    image: "/whitecitycode.svg",
+    image: "./whitecitycode.svg",
     imageDark: "/whitecitycode_white.svg",
     sponsor: "WhiteCity Code",
     link: "https://whitecitycode.com/",
     height: "max-h-20",
   },
   {
-    image: "/partners/digitalizare_black.png",
+    image: "./partners/digitalizare_black.png",
     imageDark: "/partners/digitalizare.png",
     sponsor: "Echipa De Digitalizare",
     link: "https://echipadedigitalizare.ro/",
   },
   {
-    image: "/partners/xplication.png",
+    image: "./partners/xplication.png",
     imageDark: "/partners/xplication_white.webp",
     sponsor: "Xplication",
     link: "https://xplication.com/",
     height: "max-h-20",
   },
   {
-    image: "/partners/acidart.svg",
+    image: "./partners/acidart.svg",
     imageDark: "/partners/acidart.svg",
     sponsor: "Acid Art Studio",
     link: "https://www.acidartstudio.com/",

@@ -2,6 +2,11 @@
 import { navLinks } from "../data";
 import MobileNavbar from "../components/MobileNavbar";
 import ThemeToggle from "./ThemeToggle";
+import { Image } from "astro:assets";
+import ai3_white from "../../public/ai3_white.svg";
+import logo from "../../public/logo.png";
+import diffusion_black from "../../public/diffusion_black.png";
+import diffusion_white from "../../public/diffusion_white.png";
 ---
 
 <header class="absolute inset-x-0 top-0 z-50">
@@ -15,15 +20,19 @@ import ThemeToggle from "./ThemeToggle";
         class="-m-1.5 p-1.5"
       >
         <span class="sr-only">AI3</span>
-        <img
+        <Image
           class="h-16 w-16 dark:hidden"
-          src="/logo.png"
-          alt=""
+          src={logo}
+          alt="AI3 Logo"
+          height="64"
+          width="64"
         />
-        <img
+        <Image
           class="h-16 w-16 hidden dark:block"
-          src="/ai3_white.svg"
-          alt=""
+          src={ai3_white}
+          alt="AI3 Logo"
+          height="64"
+          width="64"
         />
       </a>
     </div>
@@ -44,13 +53,15 @@ import ThemeToggle from "./ThemeToggle";
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-x-4">
       <a href="#"
-        ><img
-          src="/diffusion_black.png"
+        ><Image
+          src={diffusion_black}
           class="w-48 hidden dark:block"
+          alt="difffusion logo"
         />
-        <img
-          src="/diffusion_white.png"
+        <Image
+          src={diffusion_white}
           class="w-48 dark:hidden"
+          alt="difffusion logo"
         />
       </a>
       <ThemeToggle client:idle />
