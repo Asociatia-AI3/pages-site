@@ -23,6 +23,8 @@ export const getStaticPaths = async () => {
   return paths;
 };
 
+export const prerender = true;
+
 const { Content } = await post.render();
 ---
 
