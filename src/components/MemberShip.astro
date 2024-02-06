@@ -1,5 +1,5 @@
 ---
-import ContactForm from "./ContactForm.astro";
+import ContactForm from "./ContactForm.tsx";
 ---
 
 <div
@@ -133,7 +133,10 @@ import ContactForm from "./ContactForm.astro";
     <div
       class="bg-white dark:bg-zinc-900 px-6 py-16 lg:col-span-3 lg:px-8 lg:py-24 xl:pl-12"
     >
-      <ContactForm buttonText="Aplică acum" />
+      <ContactForm
+        buttonText="Aplică acum →"
+        client:load
+      />
     </div>
   </div>
 </div>

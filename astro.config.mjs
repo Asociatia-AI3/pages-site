@@ -4,5 +4,16 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  output: "server",
   integrations: [react(), tailwind()],
+  vite: {
+    server: {
+      proxy: {
+        localhost: {
+          target: "https://localhost:3000/api/graphql",
+          changeOrigin: true,
+        },
+      },
+    },
+  },
 });
