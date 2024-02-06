@@ -10,7 +10,7 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
     setResponseMessage("Se trimite...");
     const formData = new FormData(e.target as HTMLFormElement);
     const query = `
-      mutation MemberJoinMutation($data: ContactFormCreateInput!){
+      mutation ContactMutation($data: ContactFormCreateInput!){
         createContactForm(data: $data) {
           id
           name
