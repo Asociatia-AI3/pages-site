@@ -1,0 +1,71 @@
+---
+import { navLinks } from "../data";
+import MobileNavbar from "../components/MobileNavbar";
+import ThemeToggle from "./ThemeToggle";
+import { Image } from "astro:assets";
+import ai3_white from "../../public/ai3_white.svg";
+import logo from "../../public/logo.png";
+import diffusion_black from "../../public/diffusion_black.png";
+import diffusion_white from "../../public/diffusion_white.png";
+---
+
+<header class="absolute inset-x-0 top-0 z-50">
+  <nav
+    class="hidden md:flex mx-auto max-w-7xl items-center justify-between p-6 lg:px-8"
+    aria-label="Global"
+  >
+    <div class="flex lg:flex-1">
+      <a
+        href="/"
+        class="-m-1.5 p-1.5"
+      >
+        <span class="sr-only">AI3</span>
+        <Image
+          class="h-16 w-16 dark:hidden"
+          src={logo}
+          alt="AI3 Logo"
+          height="64"
+          width="64"
+        />
+        <Image
+          class="h-16 w-16 hidden dark:block"
+          src={ai3_white}
+          alt="AI3 Logo"
+          height="64"
+          width="64"
+        />
+      </a>
+    </div>
+
+    <div class="hidden lg:flex lg:gap-x-12">
+      {
+        navLinks.map((route) => (
+          <a
+            href={route.href}
+            class={`text-sm font-medium  leading-6  hover:text-blue-600 dark:hover:text-blue-600/80 transition ${
+              route.class ? route.class : "text-gray-700 dark:text-gray-200"
+            }`}
+          >
+            {route.route}
+          </a>
+        ))
+      }
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-x-4">
+      <a href="#"
+        ><Image
+          src={diffusion_black}
+          class="w-48 hidden dark:block"
+          alt="difffusion logo"
+        />
+        <Image
+          src={diffusion_white}
+          class="w-48 dark:hidden"
+          alt="difffusion logo"
+        />
+      </a>
+      <ThemeToggle client:idle />
+    </div>
+  </nav>
+  <MobileNavbar client:idle />
+</header>
