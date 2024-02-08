@@ -42,7 +42,7 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
   }
 
   return (
-    <div className="mx-auto max-w-lg lg:max-w-none">
+    <div className="mx-auto max-w-lg lg:max-w-none py-16 md:py-0">
       <form
         ref={formRef}
         onSubmit={submit}

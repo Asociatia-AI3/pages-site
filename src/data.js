@@ -14,26 +14,26 @@ export const activities = [
   {
     title: "CoderDojo",
     description:
-      "CoderDojo Alba Iulia este parte a unei inițiative globale de a crea cluburi de programare pentru copii și adolescenți. Dojo-ul din Alba Iulia este o inițiativă a AI3, primul cluster de IT din județul Alba.",
+      "Ne dăm întâlnire săptămânal cu viitori ninjas, copii și adolescenți nerăbdători să deslușească tainele programării. Dăm frâu liber imaginației și urmărim să o reprezentăm cu ajutorul  tehnologiilor și a unui proces de învățare, adaptat în funcție de nivelul fiecăruia.",
     image: "/about-pic.jpeg",
-    buttonDesc: "Website CoderDojo",
+    buttonDesc: "Află mai multe",
     href: "https://coderdojo.ai3.ro",
   },
   {
     title: "Ateliere",
     description:
-      "Ne întâlnim în fiecare Joi de la ora 18:00. La Ateliere facem schimb de know-how tehnic, la centrul Conventum, în săptămânile impare. La Anti-Ateliere, în săptămânile pare, socializăm informal la  framm's.",
+      "În săptămânile impare, la atelierele de la Conventum, suntem față în față cu provocările din IT, dezbatem și facem schimb de know-how tehnic. În cele pare, la anti-ateliere, socializăm și trecem în agendă ultimele noutăți, la framm’s.",
     image: "/ateliere.avif",
-    buttonDesc: "Mai multe detalii",
+    buttonDesc: "Află mai multe",
     href: "https://www.facebook.com/profile.php?id=61553933267429",
   },
   {
-    title: "Festival Digital",
+    title: "difffusion",
     description:
-      "Te invităm să explorezi primul Festival Digital din județul Alba, unde trecutul longeviv întâlnește manifestarea artistică digitală în cel mai important oraș istoric din România: Alba Iulia, Cealaltă Capitală.",
+      "Aducem în scena locală o fuziune creativ-tehnologică. Primul festival digital din județul Alba îmbină inovația cu manifestarea ei artistică și explorează tendințele din domeniile digitale, în peisajul istoric din Cealaltă Capitală a României.",
     image: "/digital_art.avif",
-    buttonDesc: "Website Festival - cand o fi",
-    href: "#",
+    buttonDesc: "Află mai multe",
+    href: "https://difffusion.ro",
   },
 ];
 
@@ -83,15 +83,19 @@ export const projects = [
     developer: "TagDiv",
     developerLogo: "/projects/tagdiv.webp",
     developerLink: "https://iflow.ro",
+    description:
+      "Pontajul, concediile și planificările sunt la un click distanță în aplicație. Navighezi mai rapid printre ele, modifici și înregistrezi în timp real. ",
   },
   {
-    name: "AltNet",
+    name: "altnet",
     logo: "/projects/iflow_logo.webp",
     bg: "/projects/get_online.avif",
     link: "https://getonline.ru",
     developer: "WhiteCity Code",
     developerLogo: "/projects/iflow_logo.webp",
     developerLink: "https://whitecitycode.com",
+    description:
+      "Descoperă alternative nelimitate și o viziune diferită pentru afacerea ta în online. De la site, design și conținut, până la marketing, brandul tău devine altceva. ",
   },
   {
     name: "Echipa De Digitalizare",
@@ -102,6 +106,8 @@ export const projects = [
     developerLogo: "/projects/digitalizare.png",
     developerLink: "https://echipadedigitalizare.ro/",
     height: "max-h-14",
+    description:
+      "Faci primii pași spre digitalizare, alături de o echipă de specialiști în soluții tehnologice dedicate IMM-urilor. ",
   },
   {
     name: "StockRx",
@@ -111,6 +117,8 @@ export const projects = [
     developer: "StockRx",
     developerLogo: "/projects/stockrx_logo.png",
     developerLink: "https://www.stockrx.uk/",
+    description:
+      "Activezi în industria farmaceutică? Gestionează mai ușor și ține evidența stocurilor cu un software de management intuitiv, creat după nevoile tale.",
   },
   {
     name: "WhiteRCPT",
@@ -120,6 +128,8 @@ export const projects = [
     developer: "WhiteCity Code",
     developerLogo: "/projects/whitecitycode.svg",
     developerLink: "https://www.whitecitycode.com/",
+    description:
+      "Scanează, administrează și sortează cu ajutorul inteligenței artificiale bonurile cumpărăturilor tale, în timp ce îți eficientizezi bugetul, totul cu o singură aplicație.",
   },
   {
     name: "Aprozarul Virutal",
@@ -129,5 +139,7 @@ export const projects = [
     developer: "Acid Art Studio",
     developerLogo: "/projects/acidartstudio.png",
     developerLink: "https://acidartstudio.com/",
+    description:
+      "Fă-ți cunoscute produsele autentice, fabricate în România, și adu-le mai aproape de clienții tăi, pe o platformă dedicată exclusiv producătorilor locali. ",
   },
 ];
