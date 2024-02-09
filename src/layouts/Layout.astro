@@ -104,12 +104,48 @@ const { title } = Astro.props;
 
   .herobg {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("https://www.casadives.ro/wp-content/uploads/2022/04/cetatea-alba-carolina.jpg");
+      url("/alba_de_sus.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 140px 0;
     color: #fff;
     position: relative;
+    background-attachment: fixed;
+    clip-path: inset(10% 10% 10% 10% round 20%, 20%);
+  }
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+  .floating {
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: rotate(90deg);
+  }
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
   }
 </style>

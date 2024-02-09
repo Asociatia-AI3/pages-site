@@ -14,10 +14,11 @@ export const activities = [
   {
     title: "CoderDojo",
     description:
-      "Ne dăm întâlnire săptămânal cu viitori ninjas, copii și adolescenți nerăbdători să deslușească tainele programării. Dăm frâu liber imaginației și urmărim să o reprezentăm cu ajutorul  tehnologiilor și a unui proces de învățare, adaptat în funcție de nivelul fiecăruia.",
+      "Ne dăm întâlnire săptămânal cu viitori ninjas, copii și adolescenți nerăbdători să deslușească tainele programării. Dăm frâu liber imaginației și urmărim să o reprezentăm cu ajutorul tehnologiilor și a unui proces de învățare.",
     image: "/about-pic.jpeg",
     buttonDesc: "Află mai multe",
     href: "https://coderdojo.ai3.ro",
+    paddingTop: "pt-8",
   },
   {
     title: "Ateliere",

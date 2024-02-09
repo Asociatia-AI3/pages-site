@@ -19,7 +19,7 @@ const posts = await getCollection("posts");
   </div>
   <div class="max-w-7xl mx-auto">
     <h2
-      class="text-3xl font-bold tracking-tight text-accent sm:text-4xl px-6 lg:px-8"
+      class="text-3xl tracking-tight font-semibold text-gray-900 dark:text-[#fefdfd] sm:text-4xl px-6 lg:px-8"
     >
       BLOG
     </h2>
@@ -53,7 +53,7 @@ const posts = await getCollection("posts");
           <div class="flex">
             <a
               href={`/posts/${posts[0].slug}`}
-              class="text-sm font-semibold leading-6 text-blue-600/80 hover:text-blue-600 transition"
+              class="text-sm font-semibold leading-6 text-accent hover:text-accent/60 transition"
               aria-describedby="featured-post"
               >Citește în continuare <span aria-hidden="true">&rarr;</span></a
             >
