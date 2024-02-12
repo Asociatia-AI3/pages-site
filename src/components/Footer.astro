@@ -2,35 +2,39 @@
 import { navLinks } from "../data";
 ---
 
-<footer
-  class="mx-auto flex items-center justify-between max-w-7xl overflow-hidden px-6 py-10 lg:px-8 border-t-2 border-gray-100 dark:border-zinc-800"
->
-  <img
-    src="/logo.png"
-    class="w-16 h-16 dark:hidden"
-  />
-  <img
-    src="/ai3_white.svg"
-    class="w-16 h-16 hidden dark:block"
-  />
-
-  <nav
-    class="flex items-center justify-between"
-    aria-label="Footer"
+<div class="bg-white dark:bg-darkBg">
+  <footer
+    class="mx-auto flex items-center justify-between max-w-7xl overflow-hidden px-6 py-10 lg:px-8 border-t-2 border-gray-100 dark:border-gray-600/60"
   >
-    <div class="flex gap-x-4">
-      {
-        navLinks.map((route) => (
-          <a
-            href={route.href}
-            class={`text-sm dark:text-gray-400 hover:text-accent dark:hover:text-accent transition ${
-              route.class ? "hidden" : "text-gray-700"
-            }`}
-          >
-            {route.route}
-          </a>
-        ))
-      }
+    <div class="flex items-center gap-x-4">
+      <img
+        src="/logo.png"
+        class="w-16 h-16 dark:hidden"
+      />
+      <img
+        src="/ai3_white.svg"
+        class="w-16 h-16 hidden dark:block"
+      />
+      <p class="text-sm">Copyright &copy; AI3</p>
     </div>
-  </nav>
-</footer>
+    <nav
+      class="flex items-center justify-between"
+      aria-label="Footer"
+    >
+      <div class="flex gap-x-4">
+        {
+          navLinks.map((route) => (
+            <a
+              href={route.href}
+              class={`text-sm dark:text-gray-400 hover:text-accent dark:hover:text-accent transition ${
+                route.class ? "hidden" : "text-gray-700"
+              }`}
+            >
+              {route.route}
+            </a>
+          ))
+        }
+      </div>
+    </nav>
+  </footer>
+</div>

@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "rgb(59 130 246 / var(--tw-bg-opacity))",
+        accent: "#7480FF",
         accentHover: "rgb(59 130 246 / var(--tw-bg-opacity))",
-        darkBg: "rgb(24 24 27 / var(--tw-bg-opacity))",
+        darkBg: "#372B7A",
       },
       boxShadow: {
         myShadow: "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
