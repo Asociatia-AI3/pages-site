@@ -32,7 +32,7 @@ export default function ThemeToggle() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-8 h-8 text-yellow-500 dark:text-gray-600"
+        className="w-8 h-8 text-yellow-500 dark:text-white/90"
       >
         <path
           strokeLinecap="round"

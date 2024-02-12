@@ -24,7 +24,7 @@ export const activities = [
     title: "Ateliere",
     description:
       "În săptămânile impare, la atelierele de la Conventum, suntem față în față cu provocările din IT, dezbatem și facem schimb de know-how tehnic. În cele pare, la anti-ateliere, socializăm și trecem în agendă ultimele noutăți, la framm’s.",
-    image: "/ateliere.avif",
+    image: "/ateliere.jpeg",
     buttonDesc: "Află mai multe",
     href: "https://www.facebook.com/profile.php?id=61553933267429",
   },
@@ -32,7 +32,7 @@ export const activities = [
     title: "difffusion",
     description:
       "Aducem în scena locală o fuziune creativ-tehnologică. Primul festival digital din județul Alba îmbină inovația cu manifestarea ei artistică și explorează tendințele din domeniile digitale, în peisajul istoric din Cealaltă Capitală a României.",
-    image: "/digital_art.avif",
+    image: "/difffusion.jpeg",
     buttonDesc: "Află mai multe",
     href: "https://difffusion.ro",
   },
@@ -79,7 +79,7 @@ export const projects = [
   {
     name: "iFlow",
     logo: "/projects/iflow_logo.webp",
-    bg: "/projects/iflow.avif",
+    bg: "/projects/iflow.webp",
     link: "https://tagdiv.com/",
     developer: "TagDiv",
     developerLogo: "/projects/tagdiv.webp",
@@ -90,7 +90,7 @@ export const projects = [
   {
     name: "altnet",
     logo: "/projects/iflow_logo.webp",
-    bg: "/projects/get_online.avif",
+    bg: "/projects/altnet.avif",
     link: "https://getonline.ru",
     developer: "WhiteCity Code",
     developerLogo: "/projects/iflow_logo.webp",
@@ -101,7 +101,7 @@ export const projects = [
   {
     name: "Echipa De Digitalizare",
     logo: "/projects/digitalizare.png",
-    bg: "/projects/digital.avif",
+    bg: "/projects/digitalizare.avif",
     link: "https://echipadedigitalizare.ro/",
     developer: "Echipa de Digitalizare",
     developerLogo: "/projects/digitalizare.png",
@@ -133,7 +133,7 @@ export const projects = [
       "Scanează, administrează și sortează cu ajutorul inteligenței artificiale bonurile cumpărăturilor tale, în timp ce îți eficientizezi bugetul, totul cu o singură aplicație.",
   },
   {
-    name: "Aprozarul Virutal",
+    name: "Aprozarul Virtual",
     logo: "/projects/aprozar.png",
     bg: "/projects/aprozar.avif",
     link: "https://aprozarulvirtual.ro/",

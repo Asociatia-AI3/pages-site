@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+import wave from "../../public/wave.svg";
+import wave_black from "../../public/wave_black.svg";
+---
+
+<Image
+  src={wave}
+  alt="wave pattern "
+  class="absolute bottom-0 w-full dark:hidden"
+/>
+<Image
+  src={wave_black}
+  alt="wave pattern "
+  class="absolute bottom-0 w-full hidden dark:block"
+/>

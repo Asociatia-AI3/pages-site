@@ -2,6 +2,7 @@
 import Button from "./Button.astro";
 import { Image } from "astro:assets";
 import logo_gem from "../../public/logo_gem.svg";
+import WavePattern from "./WavePattern.astro";
 ---
 
 <div class="relative">
@@ -43,7 +44,7 @@ import logo_gem from "../../public/logo_gem.svg";
         <div class="relative -mb-16 mt-12 sm:-mb-48 lg:relative lg:m-0">
           <div class="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0">
             <Image
-              class="z-50 w-full opacity-90 lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none rounded-2xl rotate-2 md:-rotate-[25deg]"
+              class="z-50 w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none rounded-2xl rotate-2 md:-rotate-[25deg]"
               src={logo_gem}
               alt="Logo AI3"
             />
@@ -51,12 +52,12 @@ import logo_gem from "../../public/logo_gem.svg";
           <Image
             src={logo_gem}
             alt="Logo AI3"
-            class="w-8 -rotate-45 absolute left-6 floating"
+            class="w-8 -rotate-45 absolute left-36 sm:left-6 floating"
           />
           <Image
             src={logo_gem}
             alt="Logo AI3"
-            class="w-12 rotate-6 absolute bottom-36 floating"
+            class="w-12 rotate-6 absolute bottom-36 left-12 floating"
           />
           <Image
             src={logo_gem}
@@ -67,30 +68,5 @@ import logo_gem from "../../public/logo_gem.svg";
       </div>
     </div>
   </div>
-  <svg
-    class="absolute bottom-0 dark:hidden"
-    viewBox="0 0 1425 205.55"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <g>
-      <path
-        d="M0,178.42l23.75-1.64c23.75-1.65,71.25-4.94,118.75-5.59s95,1.23,142.5,2.71,95,2.63,142.5,4.11,95,3.45,142.5,2.88,95-3.54,142.5-8.8,95-12.58,142.5-13.57,95,4.53,142.5,8.23,95,5.67,142.5,4,95-6.91,142.5-9.79,95-3.37,118.75-3.7L1425,157v65.78H0Z"
-        fill="#fff"
-      ></path>
-    </g>
-  </svg>
-  <svg
-    class="hidden dark:block absolute bottom-0"
-    viewBox="0 0 1425 205.55"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <g>
-      <path
-        d="M0,178.42l23.75-1.64c23.75-1.65,71.25-4.94,118.75-5.59s95,1.23,142.5,2.71,95,2.63,142.5,4.11,95,3.45,142.5,2.88,95-3.54,142.5-8.8,95-12.58,142.5-13.57,95,4.53,142.5,8.23,95,5.67,142.5,4,95-6.91,142.5-9.79,95-3.37,118.75-3.7L1425,157v65.78H0Z"
-        fill="#372B7A"
-      ></path>
-    </g>
-  </svg>
+  <WavePattern />
 </div>

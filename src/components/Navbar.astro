@@ -3,11 +3,15 @@ import { navLinks } from "../data";
 import MobileNavbar from "../components/MobileNavbar";
 import ThemeToggle from "./ThemeToggle";
 import { Image } from "astro:assets";
-import ai3_white from "../../public/ai3_white.svg";
-import ai3 from "../../public/ai3.svg";
 import logo from "../../public/logo.png";
-import diffusion_black from "../../public/diffusion_black.png";
-import diffusion_white from "../../public/diffusion_white.png";
+
+type Props = {
+  classes: string;
+  difffusionLogo: ImageMetadata;
+  ai3Logo: ImageMetadata;
+};
+
+const { classes, difffusionLogo, ai3Logo } = Astro.props;
 ---
 
 <header class="absolute inset-x-0 top-0 z-50">
@@ -24,7 +28,7 @@ import diffusion_white from "../../public/diffusion_white.png";
 
         <Image
           class="h-32 w-32"
-          src={ai3_white}
+          src={ai3Logo}
           alt="AI3 Logo"
           height="64"
           width="64"
@@ -37,7 +41,7 @@ import diffusion_white from "../../public/diffusion_white.png";
         navLinks.map((route) => (
           <a
             href={route.href}
-            class={`text-sm font-medium  leading-6  hover:text-accent  transition text-gray-100`}
+            class={`text-base font-medium  leading-6  hover:text-accent  transition ${classes}`}
           >
             {route.route}
           </a>
@@ -46,10 +50,10 @@ import diffusion_white from "../../public/diffusion_white.png";
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-x-4">
       <a
-        href="#"
+        href="https://difffusion.ro"
         class="p-8"
         ><Image
-          src={diffusion_black}
+          src={difffusionLogo}
           class="w-36"
           alt="difffusion logo"
         />
