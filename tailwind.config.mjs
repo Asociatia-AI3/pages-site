@@ -5,7 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "#372B7A",
+        accent: "#7480FF",
+        accentt: "#25185A",
+        secondary: "#1F2A37",
         accentHover: "rgb(59 130 246 / var(--tw-bg-opacity))",
         darkBg: "#372B7A",
       },
