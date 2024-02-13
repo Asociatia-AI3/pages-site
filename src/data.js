@@ -6,7 +6,24 @@ export const navLinks = [
   {
     route: "CoderDojo",
     href: "https://coderdojo.ai3.ro",
-    class: "text-blue-600 hover:text-blue-600/80",
+  },
+];
+
+export const initiative = [
+  {
+    title: "Tehnologia te pasionează",
+    description:
+      "Pasiunea ta pentru IT crește de la o zi la alta. Acum și-a găsit locul printre alți entuziaști, curioși să afle cum funcționează ultimele tehnologii din domeniu.",
+  },
+  {
+    title: "Știi ce urmează",
+    description:
+      "Ești convins de oportunitățile din Alba care așteaptă să fie descoperite? Atunci e timpul să le explorezi alături de noi, iar mai apoi să contribui la dezvoltarea lor.",
+  },
+  {
+    title: "Vrei să fii auzit",
+    description:
+      "Ideile și proiectele tale nu mai au răbdare și vor să fie prezentate cât mai rapid întregii comunități. Fă-le cunoscute în cadrul atelierelor AI3!",
   },
 ];
 

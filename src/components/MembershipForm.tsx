@@ -44,11 +44,11 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
   }
 
   return (
-    <div className="mx-auto px-8 sm:px-0 lg:max-w-xl ">
+    <div className="mx-auto px-8 sm:px-0 lg:max-w-lg">
       <form
         ref={formRef}
         onSubmit={submit}
-        className="grid grid-cols-1 gap-y-6 rounded-lg shadow-custom px-12 py-16 max-w-xl"
+        className="grid grid-cols-1 gap-y-6 rounded-lg shadow-custom px-4 sm:px-12 py-16 max-w-xl  relative z-40 bg-white"
       >
         <div className="group relative z-0 transition-all focus-within:z-10">
           <input
@@ -118,7 +118,7 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
         </div>
 
         <div className="grid">
-          <button className="w-full rounded-md border border-transparent bg-[#7480FF] px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-[#7480FF]/60 transition focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+          <button className="rounded-lg bg-accent max-w-none hover:bg-accent/90 px-7 py-3.5 text-sm text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
             {responseMessage === "" ? buttonText : responseMessage}
           </button>
           <a

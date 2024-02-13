@@ -1,38 +1,57 @@
 ---
+import { Image } from "astro:assets";
+import logo_gem from "../../public/logo_gem.svg";
+import ateliere from "../../public/ateliere.jpeg";
 import MembershipForm from "./MembershipForm.tsx";
 import Part from "./Part.astro";
 ---
 
 <div
   id="member"
-  class="relative bg-white dark:bg-darkBg"
+  class="relative"
 >
-  <div class="max-w-7xl mx-auto pt-24">
-    <Part />
-    <div class="sm:text-lg pt-24 grid grid-cols-1 sm:grid-cols-2">
+  <Part />
+  <div class="max-w-8xl mx-auto">
+    <div class="sm:text-lg pt-24 grid grid-cols-1 sm:grid-cols-2 bg-white">
       <div class="max-w-lg">
-        <h1 class="text-4xl dark:text-gray-50 px-8 font-bold text-accent">
-          Încă un pas și ești unul de-al nostru!
-        </h1>
-        <p class="text-sm px-8 mt-4 mb-8">
-          Completează formularul de înscriere și devino membru AI3!
-        </p>
-      </div>
-      <div>
-        <MembershipForm
-          buttonText="Aplică"
-          client:load
+        <div class="px-8">
+          <p class="text-subheading text-base font-semibold">Înscrie-te</p>
+          <h1 class="text-4xl dark:text-gray-50 font-bold text-accent mt-2">
+            Încă un pas și ești unul de-al nostru!
+          </h1>
+          <p class="text-sm mt-4 mb-8">
+            Completează formularul de înscriere și devino membru AI3!
+          </p>
+        </div>
+        <Image
+          src={ateliere}
+          alt=""
+          class="rounded-tl-[110px] rounded-lg relative z-10 aspect-[4/3] sm:ml-12 mt-8 mb-24 px-4"
         />
       </div>
-    </div>
-    <div
-      class="relative py-24 sm:py-36 mx-2 text-gray-600 dark:text-gray-400 px-8"
-    >
-      <div
-        class="absolute inset-0 flex items-center"
-        aria-hidden="true"
-      >
-        <div class="w-full border-t border-gray-300"></div>
+      <div class="relative">
+        <div class="relative">
+          <MembershipForm
+            buttonText="Aplică"
+            client:load
+          />
+        </div>
+        <div
+          class="absolute z-50 sm:z-0 -bottom-10 left-2 sm-bottom-8 sm:left-10"
+        >
+          <Image
+            src={logo_gem}
+            alt=""
+            class="w-14 h-18 sm:w-28 sm:h-36"
+          />
+        </div>
+        <div class="absolute -top-12 right-0 sm:-top-12 sm:right-20">
+          <Image
+            src={logo_gem}
+            alt=""
+            class="w-16 h-20"
+          />
+        </div>
       </div>
     </div>
   </div>

@@ -5,14 +5,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "#7480FF",
-        accentt: "#25185A",
+        accent: "#25185A",
         secondary: "#1F2A37",
         accentHover: "rgb(59 130 246 / var(--tw-bg-opacity))",
         darkBg: "#372B7A",
+        primaryText: "#637381",
+        subheading: "#18C0FF",
       },
       boxShadow: {
         custom: "0 4px 18px 0 rgba(0, 0, 0, 0.07)",
+      },
+      maxWidth: {
+        "8xl": "1440px",
       },
     },
   },
