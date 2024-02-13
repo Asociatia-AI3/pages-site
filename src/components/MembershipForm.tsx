@@ -44,91 +44,88 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
   }
 
   return (
-    <div className="px-8 sm:px-0">
+    <div className="mx-auto px-8 sm:px-0 lg:max-w-xl ">
       <form
         ref={formRef}
         onSubmit={submit}
-        className="mx-auto max-w-5xl gap-y-6"
+        className="grid grid-cols-1 gap-y-6 rounded-lg shadow-custom px-12 py-16 max-w-xl"
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 sm:space-x-10 space-y-4 sm:space-y-0">
-          <div className="grid space-y-4">
-            <div className="group relative z-0 transition-all focus-within:z-10 ">
-              <input
-                id="name"
-                autoComplete="name"
-                placeholder=" "
-                className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded  "
-                type="text"
-                name="name"
-                required
-              />
-              <label
-                htmlFor="name"
-                className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
-              >
-                Nume
-              </label>
-            </div>
-            <div className="group relative z-0 transition-all focus-within:z-10">
-              <input
-                id="email"
-                autoComplete="email"
-                placeholder=" "
-                className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded"
-                type="text"
-                name="email"
-                required
-              />
-              <label
-                htmlFor="email"
-                className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
-              >
-                Email
-              </label>
-            </div>
-            <div className="group relative z-0 transition-all focus-within:z-10">
-              <input
-                id="phone"
-                autoComplete="phone"
-                placeholder=" "
-                className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded"
-                type="text"
-                name="phone"
-                required
-              />
-              <label
-                htmlFor="phone"
-                className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
-              >
-                Număr de telefon
-              </label>
-            </div>
-          </div>
-          <div className="group relative z-0 transition-all focus-within:z-10">
-            <textarea
-              id="message"
-              placeholder=" "
-              className="peer block w-full h-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded"
-              name="message"
-              required
-            ></textarea>
-            <label
-              htmlFor="message"
-              className="pointer-events-none absolute left-6 top-12 -mt-6 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
-            >
-              Doresc să iau parte la inițiativa...
-            </label>
-          </div>
+        <div className="group relative z-0 transition-all focus-within:z-10">
+          <input
+            id="name"
+            autoComplete="name"
+            placeholder=" "
+            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
+            type="text"
+            name="name"
+            required
+          />
+          <label
+            htmlFor="name"
+            className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
+          >
+            Nume
+          </label>
         </div>
-        <div className="flex flex-col mt-6 justify-center items-center gap-x-4">
-          <button className="w-full rounded border border-transparent bg-[#7480FF] px-4 py-2.5 text-base font-medium text-white shadow-sm hover:bg-[#7480FF]/60 transition focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        <div className="group relative z-0 transition-all focus-within:z-10">
+          <input
+            id="email"
+            autoComplete="email"
+            placeholder=" "
+            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
+            type="text"
+            name="email"
+            required
+          />
+          <label
+            htmlFor="email"
+            className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
+          >
+            Email
+          </label>
+        </div>
+        <div className="group relative z-0 transition-all focus-within:z-10">
+          <input
+            id="phone"
+            autoComplete="phone"
+            placeholder=" "
+            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
+            type="text"
+            name="phone"
+            required
+          />
+          <label
+            htmlFor="phone"
+            className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
+          >
+            Număr de telefon
+          </label>
+        </div>
+        <div className="group relative z-0 transition-all focus-within:z-10">
+          <textarea
+            id="message"
+            placeholder=" "
+            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
+            name="message"
+            required
+          ></textarea>
+          <label
+            htmlFor="message"
+            className="pointer-events-none absolute left-6 top-1/2 -mt-6 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
+          >
+            Mesaj
+          </label>
+        </div>
+
+        <div className="grid">
+          <button className="w-full rounded-md border border-transparent bg-[#7480FF] px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-[#7480FF]/60 transition focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
             {responseMessage === "" ? buttonText : responseMessage}
           </button>
           <a
             href="/Statut_AI3.pdf"
             target="_blank"
             rel="noreferrer"
-            className="text-base group leading-6 text-zinc-600 dark:text-white flex items-center  mt-4"
+            className="text-sm font-medium mx-auto mt-4  group leading-6 text-accent  dark:text-white flex items-center gap-x-2 rounded-lg shadow-custom  px-4 py-2"
           >
             <span aria-hidden="true">
               <svg
