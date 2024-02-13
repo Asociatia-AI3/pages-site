@@ -30,7 +30,7 @@ const { Content } = await post.render();
 
 <BlogLayout title={post.data.title}>
   <div
-    class="pt-32 sm:px-8 block sm:flex items-center sm:gap-x-64 overflow-hidden"
+    class="pt-32 sm:px-8 block sm:flex items-center sm:gap-x-28 overflow-hidden divide-x-2"
   >
     <a
       href="/blog"
@@ -50,7 +50,7 @@ const { Content } = await post.render();
       >
     </a>
     <div
-      class="text-base border-l-2 px-2 text-gray-600 dark:text-gray-500 border-gray-500 py-2 my-4"
+      class="text-sm px-2 text-gray-600 dark:text-gray-500 border-gray-500 py-1 my-4"
     >
       {post.data.pubDate} - <span class="text-gray-800 dark:text-gray-400"
         >{post.data.author}</span
@@ -58,7 +58,7 @@ const { Content } = await post.render();
     </div>
   </div>
   <div
-    class="prose text-base prose-headings:text-gray-900 prose-headings:font-medium text-zinc-600 dark:prose-headings:text-white dark:text-gray-400 dark:prose-invert mx-auto sm:pt-8"
+    class="prose max-w-4xl text-base prose-headings:text-gray-900 prose-headings:font-medium text-zinc-600 dark:prose-headings:text-white dark:text-gray-400 dark:prose-invert mx-auto sm:pt-8"
   >
     <Content />
   </div>
