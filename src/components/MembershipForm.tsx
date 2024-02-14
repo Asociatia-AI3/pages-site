@@ -48,7 +48,7 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
       <form
         ref={formRef}
         onSubmit={submit}
-        className="grid grid-cols-1 gap-y-6 rounded-lg shadow-custom px-4 sm:px-12 py-16 max-w-xl  relative z-40 bg-white"
+        className="grid grid-cols-1 md:mx-auto gap-y-6 rounded-lg shadow-custom px-4 sm:px-12 py-16 max-w-xl  relative z-40 bg-white"
       >
         <div className="group relative z-0 transition-all focus-within:z-10">
           <input

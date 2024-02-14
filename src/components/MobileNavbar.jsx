@@ -5,7 +5,7 @@ export default function MobileNavbar() {
   const [isActive, setIsActive] = useState(false);
   return (
     <div
-      className="lg:hidden"
+      className="sm:hidden"
       role="dialog"
       aria-modal="true"
     >
