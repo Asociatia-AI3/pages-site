@@ -55,14 +55,14 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
             id="name"
             autoComplete="name"
             placeholder=" "
-            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
+            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950  ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
             type="text"
             name="name"
             required
           />
           <label
             htmlFor="name"
-            className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
+            className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500  transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
           >
             Nume
           </label>
@@ -72,14 +72,14 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
             id="email"
             autoComplete="email"
             placeholder=" "
-            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
+            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950  ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
             type="text"
             name="email"
             required
           />
           <label
             htmlFor="email"
-            className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
+            className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500  transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
           >
             Email
           </label>
@@ -89,14 +89,14 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
             id="phone"
             autoComplete="phone"
             placeholder=" "
-            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
+            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
             type="text"
             name="phone"
             required
           />
           <label
             htmlFor="phone"
-            className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
+            className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
           >
             Număr de telefon
           </label>
@@ -105,13 +105,13 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
           <textarea
             id="message"
             placeholder=" "
-            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
+            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950  ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
             name="message"
             required
           ></textarea>
           <label
             htmlFor="message"
-            className="pointer-events-none absolute left-6 top-1/2 -mt-6 origin-left text-base/6 text-neutral-500 dark:text-gray-300 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
+            className="pointer-events-none absolute left-6 top-1/2 -mt-6 origin-left text-base/6 text-neutral-500  transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-accent peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-accent"
           >
             Mesaj
           </label>
@@ -125,7 +125,7 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
             href="/Statut_AI3.pdf"
             target="_blank"
             rel="noreferrer"
-            className="text-sm font-medium mx-auto mt-4  group leading-6 text-accent  dark:text-white flex items-center gap-x-2 rounded-lg shadow-custom  px-4 py-2"
+            className="text-sm font-medium mx-auto mt-4  group leading-6 text-accent  flex items-center gap-x-2 rounded-lg shadow-custom  px-4 py-2"
           >
             <span aria-hidden="true">
               <svg

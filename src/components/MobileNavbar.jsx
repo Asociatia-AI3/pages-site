@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { navLinks } from "../data";
-import ThemeToggle from "./ThemeToggle";
 
 export default function MobileNavbar() {
   const [isActive, setIsActive] = useState(false);
@@ -10,7 +9,7 @@ export default function MobileNavbar() {
       role="dialog"
       aria-modal="true"
     >
-      <div className="fixed right-0 z-50 w-full overflow-hidden bg-white dark:bg-darkBg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div className="fixed right-0 z-50 w-full overflow-hidden bg-white  px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
           <a
             href="/"
@@ -18,19 +17,14 @@ export default function MobileNavbar() {
           >
             <span className="sr-only">AI3</span>
             <img
-              className="h-16 w-16 dark:hidden"
+              className="h-16 w-16n"
               src="/logo.png"
-              alt="AI3 logo"
-            />
-            <img
-              className="h-16 w-16 hidden dark:block"
-              src="/ai3_white.svg"
               alt="AI3 logo"
             />
           </a>
           <button
             type="button"
-            className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-zinc-50"
+            className="-m-2.5 rounded-md p-2.5 text-gray-700 "
             onClick={() => setIsActive(!isActive)}
           >
             {isActive ? (
@@ -74,37 +68,18 @@ export default function MobileNavbar() {
         </div>
         {isActive && (
           <div className="mt-6 flow-root h-screen">
-            <div className="-my-6 divide-y divide-gray-500/10 dark:divide-y dark:divide-accentHover">
+            <div className="-my-6 divide-y divide-gray-500/10 ">
               <div className="space-y-2 py-6">
                 {navLinks.map((route) => (
                   <a
                     key={route.route}
                     href={route.href}
-                    className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 dark:text-zinc-200 dark:hover:text-accent hover:text-gray-9000 ${
-                      route.classes ? route.classes : "text-gray-900"
-                    }`}
+                    className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-primaryText hover:bg-gray-50 hover:text-gray-900 
+                    `}
                   >
                     {route.route}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-accentHover hover:text-blue-700 transition"
-                >
-                  <img
-                    src="diffusion_black.png"
-                    className="w-48 hidden dark:block"
-                    alt="difffusion logo"
-                  />
-                  <img
-                    src="diffusion_white.png"
-                    className="w-48 dark:hidden"
-                    alt="difffusion logo"
-                  />
-                </a>
-                <ThemeToggle />
               </div>
             </div>
           </div>

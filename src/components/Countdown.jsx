@@ -49,10 +49,8 @@ export default function Countdown() {
 
   return (
     <div>
-      <p className="text-sm text-gray-900 dark:text-gray-200 font-mono mb-1">
-        coming soon...
-      </p>
-      <div className="flex gap-x-8 text-gray-900 dark:text-gray-200 ">
+      <p className="text-sm text-gray-200 font-mono mb-1">coming soon...</p>
+      <div className="flex gap-x-8 text-gray-200 ">
         {timerComponents.length ? timerComponents : <span>Time's up!</span>}
       </div>
     </div>

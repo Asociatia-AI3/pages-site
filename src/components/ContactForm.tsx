@@ -53,7 +53,7 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
             id="name"
             autoComplete="name"
             placeholder=" "
-            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded"
+            className="peer block w-full border border-gray-600 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950  ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
             type="text"
             name="name"
             required
@@ -70,7 +70,7 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
             id="email"
             autoComplete="email"
             placeholder=" "
-            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded"
+            className="peer block w-full border border-gray-600 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950  ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
             type="text"
             name="email"
             required
@@ -86,7 +86,7 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
           <textarea
             id="message"
             placeholder=" "
-            className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950 dark:text-gray-200 ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-"
+            className="peer block w-full border border-gray-600 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950  ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
             name="message"
             required
           ></textarea>

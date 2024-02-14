@@ -2,19 +2,16 @@
 import { navLinks } from "../data";
 ---
 
-<div class="bg-white dark:bg-darkBg">
+<div class="bg-white">
   <footer
-    class="mx-auto flex items-center justify-between max-w-7xl overflow-hidden px-6 py-10 lg:px-8 border-t-2 border-gray-100 dark:border-gray-600/60"
+    class="mx-auto flex items-center justify-between max-w-7xl overflow-hidden px-6 py-10 lg:px-8"
   >
     <div class="flex items-center gap-x-4">
       <img
         src="/logo.png"
-        class="w-16 h-16 dark:hidden"
+        class="w-16 h-16"
       />
-      <img
-        src="/ai3_white.svg"
-        class="w-16 h-16 hidden dark:block"
-      />
+
       <p class="text-xs">Copyright &copy; AI3</p>
     </div>
     <nav
@@ -26,9 +23,7 @@ import { navLinks } from "../data";
           navLinks.map((route) => (
             <a
               href={route.href}
-              class={`text-sm dark:text-gray-400 hover:text-accent dark:hover:text-accent transition ${
-                route.class ? "hidden" : "text-gray-700"
-              }`}
+              class={`text-sm text-gray-400 hover:text-accent  transition`}
             >
               {route.route}
             </a>

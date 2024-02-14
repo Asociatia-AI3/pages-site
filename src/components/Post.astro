@@ -7,30 +7,26 @@ type Props = {
 const { post } = Astro.props;
 ---
 
-<article
-  class="py-12 hover:bg-gray-50 dark:hover:bg-white/10 transition rounded-2xl sm:px-8"
->
+<article class="py-12 hover:bg-blue-100/40 transition rounded-2xl sm:px-8">
   <div class="group relative max-w-xl">
     <time
       datetime="2020-03-16"
-      class="block text-sm leading-6 text-gray-600 dark:text-zinc-400"
+      class="block text-sm leading-6 text-gray-600"
       >{post.data.pubDate}</time
     >
-    <h2
-      class="mt-2 text-lg font-semibold text-gray-900 group-hover:text-gray-600 dark:group-hover:text-gray-100 dark:text-zinc-200"
-    >
+    <h2 class="mt-2 text-lg font-semibold text-gray-900">
       <a href={`/posts/${post.slug}`}>
         <span class="absolute inset-0"></span>
         {post.data.title}
       </a>
     </h2>
-    <p class="mt-4 text-sm leading-6 text-gray-600 dark:text-zinc-300">
+    <p class="mt-4 text-sm leading-6 text-gray-600">
       {post.data.description}
     </p>
   </div>
   <div class="mt-4 flex">
     <div
-      class="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-400"
+      class="relative flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900"
     >
       <img
         src={post.data.image}

@@ -1,17 +1,8 @@
 ---
 import { navLinks } from "../data";
 import MobileNavbar from "../components/MobileNavbar";
-import ThemeToggle from "./ThemeToggle";
 import { Image } from "astro:assets";
-import logo from "../../public/logo.png";
-
-type Props = {
-  classes: string;
-  difffusionLogo: ImageMetadata;
-  ai3Logo: ImageMetadata;
-};
-
-const { classes, difffusionLogo, ai3Logo } = Astro.props;
+import ai3 from "../../public/ai3.svg";
 ---
 
 <header class="absolute top-0 inset-x-0 z-50">
@@ -28,7 +19,7 @@ const { classes, difffusionLogo, ai3Logo } = Astro.props;
 
         <Image
           class="h-24 w-16"
-          src={ai3Logo}
+          src={ai3}
           alt="AI3 Logo"
           height="64"
           width="64"
@@ -47,7 +38,6 @@ const { classes, difffusionLogo, ai3Logo } = Astro.props;
           </a>
         ))
       }
-      <ThemeToggle client:idle />
     </div>
   </nav>
   <MobileNavbar client:idle />
