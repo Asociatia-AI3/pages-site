@@ -3,20 +3,15 @@ import Button from "./Button.astro";
 import Sponsor from "./Sponsor.astro";
 ---
 
-<div class="bg-[#E4F7FF] py-24 sm:pt-36">
+<div class="bg-darkBg py-16">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:max-w-none">
-      <div class="flex items-center gap-x-8">
-        <h2 class="text-lg font-semibold text-accent">
-          Inițiative desfășurate cu sprijinul
-        </h2>
-        <div class="h-px flex-auto bg-accent"></div>
-      </div>
-      <div
-        class="mx-auto mt-10 grid sm:grid-cols-2 items-center gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0 lg:grid-cols-5"
-      >
-        <Sponsor />
-      </div>
+    <h2 class="text-4xl text-center font-semibold text-white">
+      Inițiative desfășurate cu sprijinul
+    </h2>
+    <div
+      class="mx-auto mt-10 grid sm:grid-cols-2 items-center gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0 lg:grid-cols-5"
+    >
+      <Sponsor />
     </div>
   </div>
 </div>
