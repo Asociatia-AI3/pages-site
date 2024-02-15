@@ -1,18 +1,13 @@
 ---
 import { navLinks } from "../data";
 import MobileNavbar from "../components/MobileNavbar";
-import ThemeToggle from "./ThemeToggle";
 import { Image } from "astro:assets";
-import ai3_white from "../../public/ai3_white.svg";
 import ai3 from "../../public/ai3.svg";
-import logo from "../../public/logo.png";
-import diffusion_black from "../../public/diffusion_black.png";
-import diffusion_white from "../../public/diffusion_white.png";
 ---
 
-<header class="absolute inset-x-0 top-0 z-50">
+<header class="absolute top-0 inset-x-0 z-50">
   <nav
-    class="hidden md:flex mx-auto max-w-7xl items-center justify-between p-6 lg:px-8"
+    class="hidden md:flex mx-auto max-w-7xl items-center justify-between p-6 lg:px-6"
     aria-label="Global"
   >
     <div class="flex lg:flex-1">
@@ -23,8 +18,8 @@ import diffusion_white from "../../public/diffusion_white.png";
         <span class="sr-only">AI3</span>
 
         <Image
-          class="h-32 w-32"
-          src={ai3_white}
+          class="h-42 w-24"
+          src={ai3}
           alt="AI3 Logo"
           height="64"
           width="64"
@@ -32,29 +27,17 @@ import diffusion_white from "../../public/diffusion_white.png";
       </a>
     </div>
 
-    <div class="hidden lg:flex lg:gap-x-12">
+    <div class="hidden md:flex md:gap-x-12 items-center">
       {
         navLinks.map((route) => (
           <a
             href={route.href}
-            class={`text-sm font-medium  leading-6  hover:text-accent  transition text-gray-100`}
+            class="text-base font-medium leading-6 text-[#111928] hover:text-accent transition"
           >
             {route.route}
           </a>
         ))
       }
-    </div>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-x-4">
-      <a
-        href="#"
-        class="p-8"
-        ><Image
-          src={diffusion_black}
-          class="w-36"
-          alt="difffusion logo"
-        />
-      </a>
-      <ThemeToggle client:idle />
     </div>
   </nav>
   <MobileNavbar client:idle />

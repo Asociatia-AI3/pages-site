@@ -1,0 +1,32 @@
+---
+import { initiative } from "../data";
+---
+
+<div class="bg-[#E4F7FF] py-24 sm:py-12 sm:pb-24">
+  <div class="px-8 max-w-8xl mx-auto">
+    <h1 class="text-4xl font-bold text-accent sm:text-4xl sm:text-center">
+      Ești deja parte din inițiativa AI3 dacă
+    </h1>
+    <dl
+      class="mx-auto mt-16 grid grid-cols-1 gap-y-12 lg:grid-cols-3 lg:max-w-none"
+    >
+      {
+        initiative.map((initiativa) => (
+          <div class="max-w-sm bg-white shadow-custom px-10 py-5 rounded-3xl">
+            <img
+              src="/gem.svg"
+              alt=""
+              class="py-7 w-7"
+            />
+            <dt class="font-semibold text-[#111928]  flex items-center gap-x-2">
+              <span class="text-2xl">{initiativa.title}</span>
+            </dt>
+            <dd class="text-base text-primaryText font-normal py-10">
+              {initiativa.description}
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</div>

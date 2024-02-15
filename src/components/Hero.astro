@@ -2,95 +2,59 @@
 import Button from "./Button.astro";
 import { Image } from "astro:assets";
 import logo_gem from "../../public/logo_gem.svg";
+import heroBg from "../../public/heroBg.jpeg";
 ---
 
-<div class="relative">
-  <div class="herobg">
-    <div class="mx-auto max-w-7xl">
-      <div class="lg:grid lg:grid-cols-2 lg:gap-24">
-        <div
-          class="mx-auto max-w-md px-6 sm:max-w-2xl sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left z-50"
-        >
-          <div class="lg:py-24">
-            <h1
-              class="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:mt-6 xl:text-6xl"
+<div class="relative gradient">
+  <div class="mx-auto max-w-8xl mt-36 sm:mt-0 py:24 sm:py-12 sm:pt-28 px-4">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-x-28">
+      <div class="mx-auto sm:max-w-2xl lg:flex lg:items-center lg:px-0">
+        <div>
+          <h1 class="text-5xl font-semibold text-accent">
+            Inițiativă pentru <br /> dezvoltare durabilă
+          </h1>
+          <p
+            class="mt-3 text-lg text-secondary py-5 sm:py-10 font-normal max-w-md"
+          >
+            Fă cunoștință cu <strong
+              >primul cluster de IT&C din județul Alba!</strong
+            > Încurajăm, dezvoltăm și generăm oportunități pentru industriile high-tech,
+            împreună.
+          </p>
+          <div class="flex items-center gap-x-2.5">
+            <Button
+              href="#member"
+              text="Mă alătur"
+            />
+            <a
+              href="#member"
+              class="text-[#464646] text-base"
+              >Mai vreau detalii</a
             >
-              <span class="text-accent">Inițiativă</span>
-              pentru dezvoltare durabilă
-            </h1>
-            <p
-              class="mt-3 text-base text-zinc-100 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
-            >
-              Fă cunoștință cu <strong
-                >primul cluster de IT&C din județul Alba!</strong
-              > Încurajăm, dezvoltăm și generăm oportunități pentru industriile high-tech,
-              împreună.
-            </p>
-            <p class="mt-4 text-zinc-100 sm:text-sm lg:text-base xl:text-base">
-              Unde-s mulți, inițiativele cresc! Cu atât mai mult cu cât
-              împărtășim cu toții același obiectiv: să propulsăm Alba în topul
-              județelor din România, prin inovație tehnologică și antreprenoriat
-              local.
-            </p>
-            <div class="mt-10 sm:mt-12">
-              <Button
-                href="#member"
-                text="Devino membru"
-              />
-            </div>
           </div>
         </div>
-        <div class="relative -mb-16 mt-12 sm:-mb-48 lg:relative lg:m-0">
-          <div class="mx-auto max-w-md px-6 sm:max-w-2xl lg:max-w-none lg:px-0">
-            <Image
-              class="z-50 w-full opacity-90 lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none rounded-2xl rotate-2 md:-rotate-[25deg]"
-              src={logo_gem}
-              alt="Logo AI3"
-            />
-          </div>
+      </div>
+      <div class="relative max-w-xl pt-8">
+        <div>
           <Image
-            src={logo_gem}
-            alt="Logo AI3"
-            class="w-8 -rotate-45 absolute left-6 floating"
+            src={heroBg}
+            alt=""
+            class="rounded-tl-[110px] rounded-lg relative z-10"
           />
+        </div>
+        <div class="absolute -bottom-12 -left-16">
           <Image
             src={logo_gem}
-            alt="Logo AI3"
-            class="w-12 rotate-6 absolute bottom-36 floating"
-          />
-          <Image
-            src={logo_gem}
-            alt="Logo AI3"
-            class="w-16 rotate-45 absolute bottom-96 right-14 sm:right-28 sm:bottom-36 floating"
+            alt=""
+            class="w-28 h-36 hidden sm:block"
           />
         </div>
       </div>
     </div>
   </div>
-  <svg
-    class="absolute bottom-0 dark:hidden"
-    viewBox="0 0 1425 205.55"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <g>
-      <path
-        d="M0,178.42l23.75-1.64c23.75-1.65,71.25-4.94,118.75-5.59s95,1.23,142.5,2.71,95,2.63,142.5,4.11,95,3.45,142.5,2.88,95-3.54,142.5-8.8,95-12.58,142.5-13.57,95,4.53,142.5,8.23,95,5.67,142.5,4,95-6.91,142.5-9.79,95-3.37,118.75-3.7L1425,157v65.78H0Z"
-        fill="#fff"
-      ></path>
-    </g>
-  </svg>
-  <svg
-    class="hidden dark:block absolute bottom-0"
-    viewBox="0 0 1425 205.55"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <g>
-      <path
-        d="M0,178.42l23.75-1.64c23.75-1.65,71.25-4.94,118.75-5.59s95,1.23,142.5,2.71,95,2.63,142.5,4.11,95,3.45,142.5,2.88,95-3.54,142.5-8.8,95-12.58,142.5-13.57,95,4.53,142.5,8.23,95,5.67,142.5,4,95-6.91,142.5-9.79,95-3.37,118.75-3.7L1425,157v65.78H0Z"
-        fill="#372B7A"
-      ></path>
-    </g>
-  </svg>
+  <img
+    src="/wavepatternlight.svg"
+    alt=""
+    class="pt-24 sm:pt-0"
+  />
 </div>
