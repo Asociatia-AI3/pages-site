@@ -12,6 +12,7 @@ tags:
 author: "Adrian Roșian"
 description: "Continuing from our exploration of GUI programming challenges, this article delves deeper into Functional Reactive Programming (FRP), analyzing its evolution and impact on GUI development, with a focus on its methodologies and their effectiveness in improving composability, type safety, and simplifying complex GUI tasks."
 image: /adrian.jpg
+background: /functionalprogramming.avif
 ---
 
 # Functional Reactive Programming (FRP)
