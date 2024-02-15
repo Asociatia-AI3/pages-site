@@ -11,8 +11,8 @@ import ContactForm from "./ContactForm.tsx";
   id="contact"
   class="relative bg-[#E4F7FF] py-24 sm:py-36"
 >
-  <div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-    <div class="px-6 lg:col-span-2 lg:px-8 lg:py-12 xl:pr-12">
+  <div class="relative px-6 mx-auto max-w-7xl lg:grid lg:grid-cols-4">
+    <div class="lg:col-span-2 lg:px-8 lg:py-12 xl:pr-12">
       <div class="mx-auto max-w-lg relative">
         <h2
           class="text-2xl text-accent font-semibold sm:text-3xl flex items-center gap-x-3"
@@ -28,6 +28,54 @@ import ContactForm from "./ContactForm.tsx";
           Ai ceva să ne spui? Intră acum în legătură cu un membru AI3!
         </p>
         <div>
+          <p class="text-lg pt-8 text-primaryText flex items-center gap-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-accent"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              ></path>
+            </svg>
+
+            <a
+              class="hover:underline transition text-gray-800"
+              href="mailto:salut@ai3.ro"
+              >salut@ai3.ro</a
+            >
+          </p>
+          <p class="text-lg pt-4 text-primaryText flex items-center gap-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-accent"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              ></path>
+            </svg>
+            <a
+              class="hover:underline transition text-gray-800"
+              href="https://www.google.com/maps/place/WhiteCity+Code/@46.065087,23.5533103,17z/data=!4m6!3m5!1s0x474ea87919ad6305:0x56b7b8f28445612c!8m2!3d46.065087!4d23.555499!16s%2Fg%2F12vscqjlw?coh=164777&entry=tt&shorturl=1"
+              >Bulevardul Revoluției 1989 1G</a
+            >
+          </p>
           <p class="mt-6 text-lg text-primaryText">
             Urmărește-ne în Social Media și ține pasul cu noi!
           </p>
@@ -51,17 +99,20 @@ import ContactForm from "./ContactForm.tsx";
               </svg>
             </a>
           </div>
-          <p class="text-lg pt-8 text-primaryText">
-            Ne poți vizita pe <a
-              class="hover:underline transition text-gray-800"
-              href="https://www.google.com/maps/place/WhiteCity+Code/@46.065087,23.5533103,17z/data=!4m6!3m5!1s0x474ea87919ad6305:0x56b7b8f28445612c!8m2!3d46.065087!4d23.555499!16s%2Fg%2F12vscqjlw?coh=164777&entry=tt&shorturl=1"
-              >Bulevardul Revoluției 1989 1G, Alba Iulia</a
-            >
-          </p>
         </div>
       </div>
     </div>
-    <div class="px-6 sm:py-16 lg:col-span-3 lg:px-8 lg:py-12 xl:pl-12">
+    <div
+      class="relative md:mx-auto lg:mx-0 sm:py-16 lg:col-span-2 lg:py-24 px-8 md:pl-0 xl:pl-12 bg-white rounded-2xl shadow-custom max-w-lg mt-4 sm:mt-0"
+    >
+      <svg
+        class="absolute top-0 right-0 h-48 w-1/3 rotate-180 fill-[#E4F7FF]"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <polygon points="100,50 0,0 0,100 50,100"></polygon>
+      </svg>
       <ContactForm
         buttonText="Trimite mesajul →"
         client:load

@@ -42,7 +42,7 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
   }
 
   return (
-    <div className="mx-auto max-w-lg lg:max-w-none py-16 md:py-0">
+    <div className="mx-auto py-16 md:py-0  md:px-8 lg:px-0">
       <form
         ref={formRef}
         onSubmit={submit}
@@ -98,11 +98,9 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
           </label>
         </div>
 
-        <div>
-          <button className="inline-flex justify-center rounded-md border border-transparent bg-accent px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-accent/60 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-            {responseMessage === "" ? buttonText : responseMessage}
-          </button>
-        </div>
+        <button className="px-7 py-3.5 border-2 border-darkBg text-darkBg hover:bg-darkBg hover:text-white transition block text-center rounded-2xl">
+          {responseMessage === "" ? buttonText : responseMessage}
+        </button>
       </form>
     </div>
   );
