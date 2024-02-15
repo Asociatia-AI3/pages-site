@@ -12,6 +12,7 @@ tags:
 author: "Adrian Roșian"
 description: "The article addresses the challenges in GUI programming, comparing solutions like Functional Reactive Programming and monad-comonad pairings, emphasizing their role in enhancing composability, type safety, and reducing complexity in GUI development."
 image: /adrian.jpg
+background: /functional_programming.avif
 ---
 
 # Programming GUIs: Challenges and Solutions

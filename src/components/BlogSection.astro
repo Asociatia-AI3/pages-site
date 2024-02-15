@@ -22,19 +22,38 @@ const posts = await getCollection("posts");
     <div
       class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8 relative"
     >
-      <article class="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg z-10">
-        <time
-          datetime="2020-03-16"
-          class="block text-sm leading-6 text-gray-600"
-          >{posts[0].data.pubDate}</time
-        >
+      <article
+        class="mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-4xl z-10 shadow-custom p-8 rounded-xl"
+      >
+        <img
+          src={posts[0].data.background}
+          alt=""
+        />
+        <div class="flex pt-4 lg:pt-8 gap-x-4">
+          <div
+            class="flex gap-x-2.5 text-sm font-semibold leading-6 text-accent"
+          >
+            <img
+              src={posts[0].data.image}
+              alt=""
+              class="h-6 w-6 flex-none rounded-full bg-gray-50"
+            />
+            {posts[0].data.author}
+          </div>
+          <time
+            datetime="2020-03-16"
+            class="block text-sm leading-6 text-gray-600"
+            >{posts[0].data.pubDate}</time
+          >
+        </div>
+
         <h2
           id="featured-post"
-          class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          class="mt-4 text-3xl font-bold tracking-tight text-gray-900"
         >
           {posts[0].data.title}
         </h2>
-        <p class="mt-4 text-lg leading-8 text-gray-600">
+        <p class="mt-4 text-lg font-light text-primaryText">
           {posts[0].data.description}
         </p>
         <div
@@ -48,25 +67,18 @@ const posts = await getCollection("posts");
               >Citește în continuare <span aria-hidden="true">&rarr;</span></a
             >
           </div>
-          <div class="flex lg:border-t lg:border-gray-900/10 lg:pt-8">
-            <div
-              class="flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900"
-            >
-              <img
-                src={posts[0].data.image}
-                alt=""
-                class="h-6 w-6 flex-none rounded-full bg-gray-50"
-              />
-              {posts[0].data.author}
-            </div>
-          </div>
         </div>
       </article>
       <div
-        class="mx-auto w-full max-w-2xl border-t z-10 border-gray-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0"
+        class="mx-auto max-w-2xl z-10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:pt-0"
       >
-        <div class="-my-12 divide-y divide-gray-900/10">
-          {posts.slice(1).map((post) => <Post post={post} />)}
+        <a
+          href="/blog"
+          class="flex sm:justify-end text-primaryText"
+          >Vezi toate postarile</a
+        >
+        <div>
+          {posts.map((post) => <Post post={post} />)}
         </div>
       </div>
     </div>
