@@ -7,7 +7,7 @@ import { initiative } from "../data";
     <h1 class="text-4xl font-bold text-accent sm:text-4xl sm:text-center">
       Ești deja parte din inițiativa AI3 dacă
     </h1>
-    <dl
+    <div
       class="mx-auto mt-16 grid grid-cols-1 gap-y-12 lg:grid-cols-3 lg:max-w-none"
     >
       {
@@ -18,15 +18,15 @@ import { initiative } from "../data";
               alt=""
               class="py-7 w-7"
             />
-            <dt class="font-semibold text-[#111928]  flex items-center gap-x-2">
+            <div class="font-semibold text-[#111928]  flex items-center gap-x-2">
               <span class="text-2xl">{initiativa.title}</span>
-            </dt>
-            <dd class="text-base text-primaryText font-normal py-10">
+            </div>
+            <div class="text-base text-primaryText font-normal py-10">
               {initiativa.description}
-            </dd>
+            </div>
           </div>
         ))
       }
-    </dl>
+    </div>
   </div>
 </div>
