@@ -1,9 +1,15 @@
 ---
 import Button from "./Button.astro";
 import Sponsor from "./Sponsor.astro";
+
+type Props = {
+  bgColor: string;
+};
+
+const { bgColor } = Astro.props;
 ---
 
-<div class="bg-darkBg py-16">
+<div class={`${bgColor} py-16`}>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div>
       <img
