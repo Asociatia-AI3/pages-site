@@ -57,6 +57,7 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
             type="text"
             name="name"
             required
+            minLength={1}
           />
           <label
             htmlFor="name"
@@ -71,7 +72,7 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
             autoComplete="email"
             placeholder=" "
             className="peer block w-full border border-gray-600 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950  ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
-            type="text"
+            type="email"
             name="email"
             required
           />
@@ -89,6 +90,7 @@ export default function ContactForm({ buttonText }: { buttonText: string }) {
             className="peer block w-full border border-gray-600 bg-transparent px-6 pb-4 pt-6 text-base/6 text-neutral-950  ring-4 ring-transparent transition focus:border-accent focus:outline-none focus:ring-accent/5 rounded-2xl"
             name="message"
             required
+            minLength={3}
           ></textarea>
           <label
             htmlFor="message"
