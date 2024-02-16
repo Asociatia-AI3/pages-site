@@ -89,17 +89,6 @@ export const partners = [
 
 export const projects = [
   {
-    name: "iFlow",
-    logo: "/projects/iflow_logo.webp",
-    bg: "/projects/iflow.webp",
-    link: "https://tagdiv.com/",
-    developer: "TagDiv",
-    developerLogo: "/projects/tagdiv.webp",
-    developerLink: "https://iflow.ro",
-    description:
-      "Pontajul, concediile și planificările sunt la un click distanță în aplicație. Navighezi mai rapid printre ele, modifici și înregistrezi în timp real. ",
-  },
-  {
     name: "altnet",
     logo: "/projects/iflow_logo.webp",
     bg: "/projects/altnet.avif",
