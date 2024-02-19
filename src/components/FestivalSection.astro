@@ -36,11 +36,18 @@ import Countdown from "./Countdown";
         <Countdown client:only />
       </div>
     </div>
-    <div>
+    <div class="relative">
       <Image
         src={difffusionpic}
         alt=""
-        class="sm:max-w-lg rounded-3xl shadow-custom"
+        class="sm:max-w-lg rounded-3xl shadow-custom z-10 relative"
+      />
+      <Image
+        src="/logo-just-diez.png"
+        alt=""
+        width={240}
+        height={240}
+        class="absolute -top-20 -right-28 blur"
       />
     </div>
   </div>
