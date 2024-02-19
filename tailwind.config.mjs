@@ -17,6 +17,9 @@ export default {
       maxWidth: {
         "8xl": "1440px",
       },
+      backgroundImage: {
+        difffusionBg: "url('/difffusionbg.avif')",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],

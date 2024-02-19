@@ -1,22 +1,28 @@
 ---
 import Button from "./Button.astro";
 import Sponsor from "./Sponsor.astro";
+
+type Props = {
+  bgColor: string;
+};
+
+const { bgColor } = Astro.props;
 ---
 
-<div class="bg-darkBg py-16">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class={`${bgColor} py-16`}>
+  <div class="mx-auto max-w-8xl px-6 lg:px-8">
     <div>
       <img
         src="logo_gem.svg"
         alt=""
-        class="w-16 h-16 sm:mx-auto -rotate-12"
+        class="w-16 h-16 -rotate-12"
       />
-      <h2 class="text-4xl sm:text-center font-semibold text-white">
+      <h2 class="text-4xl font-semibold text-white">
         Inițiative desfășurate cu sprijinul
       </h2>
     </div>
     <div
-      class="mx-auto mt-10 grid sm:grid-cols-2 items-center gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0 lg:grid-cols-5"
+      class="mx-auto mt-10 grid grid-cols-2 sm:grid-cols-2 items-center gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0 lg:grid-cols-5"
     >
       <Sponsor />
     </div>

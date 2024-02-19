@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import { useState, type FormEvent } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function MembershipForm({ buttonText }: { buttonText: string }) {
   const formRef = useRef<HTMLFormElement>(null);
@@ -41,6 +43,7 @@ export default function MembershipForm({ buttonText }: { buttonText: string }) {
     if (formRef.current) {
       formRef.current.reset();
     }
+    toast.success("Mesajul tău a fost trimis cu succes!");
   }
 
   return (

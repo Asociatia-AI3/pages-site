@@ -1,11 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import logo_glitch from "../../public/logo-glitch.png";
-import logo_glitch_dark from "../../public/logo_glitch_dark.png";
-import pattern from "../../public/difffusion_pattern.avif";
-import Sponsor from "./Sponsor.astro";
+import difffusionpic from "../../public/difffusionpic.avif";
 import Countdown from "./Countdown";
-import Button from "./Button.astro";
 ---
 
 <img
@@ -14,7 +11,9 @@ import Button from "./Button.astro";
   class="pt-24 sm:pt-0"
 />
 <div class="relative overflow-hidden bg-darkBg">
-  <div class="px-6 py-12 sm:px-6 sm:py-24 lg:px-8 max-w-7xl mx-auto relative">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 gap-24 sm:gap-48 px-6 py-12 sm:px-6 sm:py-24 lg:px-8 max-w-8xl mx-auto relative"
+  >
     <div class="max-w-2xl">
       <Image
         src={logo_glitch}
@@ -36,6 +35,20 @@ import Button from "./Button.astro";
       <div class="flex pt-4 sm:pt-10">
         <Countdown client:only />
       </div>
+    </div>
+    <div class="relative">
+      <Image
+        src={difffusionpic}
+        alt=""
+        class="sm:max-w-lg rounded-3xl shadow-custom z-10 relative"
+      />
+      <Image
+        src="/logo-just-diez.png"
+        alt=""
+        width={240}
+        height={240}
+        class="absolute -top-20 -right-28 blur"
+      />
     </div>
   </div>
 </div>

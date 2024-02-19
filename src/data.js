@@ -60,25 +60,26 @@ export const partners = [
     image: "./partners/primaria.png",
     sponsor: "Primaria Alba Iulia",
     link: "https://www.apulum.ro/",
-    height: "max-h-36",
+    height: "max-h-32",
   },
   {
     image: "/partners/cea_mai_tare_firma.svg",
     sponsor: "WhiteCity Code",
     link: "https://whitecitycode.com/",
-    height: "h-48",
+    height: "max-h-48",
+  },
+  {
+    image: "./partners/xplication.webp",
+    sponsor: "Xplication",
+    link: "https://xplication.com/",
+    height: "max-h-24",
   },
   {
     image: "./partners/digitalizare.png",
     sponsor: "Echipa De Digitalizare",
     link: "https://echipadedigitalizare.ro/",
   },
-  {
-    image: "./partners/xplication.webp",
-    sponsor: "Xplication",
-    link: "https://xplication.com/",
-    height: "max-h-20",
-  },
+
   {
     image: "./partners/acidartstudio.svg",
     sponsor: "Acid Art Studio",
@@ -90,45 +91,36 @@ export const partners = [
 export const projects = [
   {
     name: "altnet",
-    logo: "/projects/iflow_logo.webp",
     bg: "/projects/altnet.avif",
-    link: "https://getonline.ru",
+    link: "https://altnet.ro",
     developer: "WhiteCity Code",
-    developerLogo: "/projects/iflow_logo.webp",
     developerLink: "https://whitecitycode.com",
     description:
       "Descoperă alternative nelimitate și o viziune diferită pentru afacerea ta în online. De la site, design și conținut, până la marketing, brandul tău devine altceva. ",
   },
   {
     name: "Echipa De Digitalizare",
-    logo: "/projects/digitalizare.png",
     bg: "/projects/digitalizare.avif",
     link: "https://echipadedigitalizare.ro/",
     developer: "Echipa de Digitalizare",
-    developerLogo: "/projects/digitalizare.png",
     developerLink: "https://echipadedigitalizare.ro/",
-    height: "max-h-14",
     description:
       "Faci primii pași spre digitalizare, alături de o echipă de specialiști în soluții tehnologice dedicate IMM-urilor. ",
   },
   {
     name: "StockRx",
-    logo: "/projects/stockrx.png",
     bg: "/projects/stockrx.avif",
     link: "https://stockrx.uk/",
     developer: "StockRx",
-    developerLogo: "/projects/stockrx_logo.png",
     developerLink: "https://www.stockrx.uk/",
     description:
       "Activezi în industria farmaceutică? Gestionează mai ușor și ține evidența stocurilor cu un software de management intuitiv, creat după nevoile tale.",
   },
   {
     name: "WhiteRCPT",
-    logo: "/projects/whitercpt.svg",
     bg: "/projects/whitercpt.avif",
     link: "https://whitercpt.ro/",
     developer: "WhiteCity Code",
-    developerLogo: "/projects/whitecitycode.svg",
     developerLink: "https://www.whitecitycode.com/",
     description:
       "Scanează, administrează și sortează cu ajutorul inteligenței artificiale bonurile cumpărăturilor tale, în timp ce îți eficientizezi bugetul, totul cu o singură aplicație.",
