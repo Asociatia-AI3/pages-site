@@ -60,25 +60,26 @@ export const partners = [
     image: "./partners/primaria.png",
     sponsor: "Primaria Alba Iulia",
     link: "https://www.apulum.ro/",
-    height: "max-h-36",
+    height: "max-h-32",
   },
   {
     image: "/partners/cea_mai_tare_firma.svg",
     sponsor: "WhiteCity Code",
     link: "https://whitecitycode.com/",
-    height: "h-48",
+    height: "max-h-48",
+  },
+  {
+    image: "./partners/xplication.webp",
+    sponsor: "Xplication",
+    link: "https://xplication.com/",
+    height: "max-h-24",
   },
   {
     image: "./partners/digitalizare.png",
     sponsor: "Echipa De Digitalizare",
     link: "https://echipadedigitalizare.ro/",
   },
-  {
-    image: "./partners/xplication.webp",
-    sponsor: "Xplication",
-    link: "https://xplication.com/",
-    height: "max-h-20",
-  },
+
   {
     image: "./partners/acidartstudio.svg",
     sponsor: "Acid Art Studio",
