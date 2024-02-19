@@ -49,7 +49,7 @@ export default function Countdown() {
 
   return (
     <div>
-      <p className="text-sm sm:text-center text-gray-200 font-mono mb-1 pt-20">
+      <p className="text-sm  text-gray-200 font-mono mb-1 pt-20">
         coming soon...
       </p>
       <span className="flex w-full sm:justify-center gap-x-8 text-gray-200 text-center">
