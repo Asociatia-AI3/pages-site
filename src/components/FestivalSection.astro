@@ -3,12 +3,13 @@ import { Image } from "astro:assets";
 import logo_glitch from "../../public/logo-glitch.png";
 import logo_glitch_dark from "../../public/logo_glitch_dark.png";
 import pattern from "../../public/difffusion_pattern.avif";
-import Sponsor from "./Sponsor.astro";
 import Countdown from "./Countdown";
+import Sponsors from "./Sponsors.astro";
+import Sponsor from "./Sponsor.astro";
 import Button from "./Button.astro";
 ---
 
-<div class="relative bg-difffusionBg sm:bg-center py-24 sm:py-0 bg-opacity-50">
+<div class="bg-difffusionBg bg-no-repeat bg-center py-24 sm:py-0 bg-opacity-50">
   <div class="px-6 py-12 sm:px-6 sm:py-24 lg:px-8 max-w-7xl mx-auto relative">
     <div>
       <Image
@@ -31,4 +32,5 @@ import Button from "./Button.astro";
       <Countdown client:only />
     </div>
   </div>
+  <Sponsors bgColor="bg-transparent" />
 </div>
